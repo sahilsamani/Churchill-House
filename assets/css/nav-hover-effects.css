@@ -23,7 +23,7 @@ header nav ul li a::before{
 }
 
 /* This code is for the after hover effects */
-header nav ul li a::after{
+#header nav ul li a::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -35,7 +35,7 @@ header nav ul li a::after{
 
 /* This code is for the before hover effects. In this code, the transform-origin and transition property add
  simply animations on hover to the navigation links.  */
-header nav ul li a::before{
+#header nav ul li a::before{
   top: 0;
   transform-origin: left;
   transition: all 0.5s;
@@ -45,7 +45,7 @@ header nav ul li a::before{
 /* This code is for the after hover effects. The transform-origin property allows me to change the position
 of yellow hover effect below the links to left and the transition allows the hover effect to move smoothly
 from left to right */
-header nav ul li a::after{
+#header nav ul li a::after{
   bottom: 0;
   transform-origin: left;
   transition: all 0.5s;
@@ -54,13 +54,13 @@ header nav ul li a::after{
 
 /* This code is for the before hover effects. The transform property is the main animation property that
 allows the hover effect to occur. Without the transform property, the hover effect would not appear */
-header nav ul li a:hover::before{
+#header nav ul li a:hover::before{
   transform: scaleX(1);
 
 }
 
 /* Comments same as above */
-header nav ul li a:hover::after{
+#header nav ul li a:hover::after{
   transform: scaleX(1);
 
 }

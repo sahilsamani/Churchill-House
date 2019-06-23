@@ -11,10 +11,16 @@ font-family: 'Merriweather', serif; */
   margin: auto;
   overflow: hidden;
 
+
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body{
   background-color: #393f4d;
+  height: 100%;
 }
 
 
@@ -24,15 +30,17 @@ including before and after hover effects******/
 
 /********************** Styling the navigation links ********************/
 /* This code gives the navigation links style in total */
-header nav ul{
+#header nav ul{
   display: flex;
+  transition: 0.6s;
+
 }
 
-header nav ul li{
+#header nav ul li{
   list-style: none;
 }
 
-header nav ul li a{
+#header nav ul li a{
   text-decoration: none;
   color:  #bebec6;
   letter-spacing: 0.5px;
@@ -41,6 +49,11 @@ header nav ul li a{
   margin: 0 3rem;
 
 }
+
+/* #header nav{
+  background-color: grey;
+  width: 100%;
+} */
 
 /* This code changes the font size and font family of the navigation links */
 html{
@@ -57,18 +70,31 @@ html{
   float: left;
   position: relative;
   margin: 10px 15px 15px 10px;
+  transition: 0.6s;
+  /* transition: 0.8s;
+  transform-origin: left; */
 
 }
 
 /**************** Navigation highlighting single text styles applied **************************/
 
 /* This code is for the text highlight that has been set on the description nav link.*/
-header nav .nav-text-highlight{
+#header nav .nav-text-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
 
-header h1 .hero-content-highlight{
+#header h1 .hero-content-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#intro-section p .intro-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#intro-section h1 .intro-text-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
@@ -79,11 +105,12 @@ header h1 .hero-content-highlight{
 /************************** Main Content Styles Applied ************************/
 
 /*This code is for the hero image, which is displayed on the homepage*/
-header{
+#header{
   width: 100%;
-  height: 114vh;
-  min-height: 400px;
-  background: url(../images/churchill-hero-img.jpg);
+  height: 100vh;
+  min-height: 100%;
+  background-image: url('../images/churchill-hero-img.jpg');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -92,18 +119,23 @@ header{
 }
 
 /* This code is for the hero image content */
-header .hero-image-content{
+#header .hero-image-content{
   color: #d4d4dc;
   text-align: center;
 
 }
 
-header .hero-image-content h1{
+#header .hero-image-content h1{
   margin-top: 50px;
   font-size: 50px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
+
+.hero-image-content-button{
+  text-align: center;
+}
+
 
 
 
@@ -114,18 +146,25 @@ h1{
 
 }
 
-header p{
+#header p{
   font-family: 'Merriweather', serif;
   font-size: 20px;
-  line-height: 2;
+  line-height: 2em;
 }
 
 /* Button styles applied */
 
-.btn1{
-  margin-left: 490px;
+.intro-btn{
+
   margin-top: 50px;
   padding: 10px 20px;
+
+
+}
+
+/* Styling button  */
+
+.common-btn-styling{
   border: 3px solid #feda6a;
   font-family: 'Merriweather', serif;
   cursor: pointer;
@@ -133,15 +172,28 @@ header p{
   border-radius: 5px;
   transition: 0.6s;
   background-color: #393f4d;
+  display: inline-block;
+  text-decoration: none;
+
 }
+
+a.common-btn-styling{
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
 
 
 
 /* Button Hover Effects */
 
-.btn1:hover{
+.intro-btn:hover{
   color: #393f4d;
 }
+
+
 
 /* Newsletter Section */
 
@@ -149,21 +201,237 @@ header p{
   border-top: 2px solid #feda6a;
   border-bottom: 2px solid #feda6a;
   padding: 15px;
-  color: white;
+  color: #d4d4dc;
   background-color: #393f4d;
+  text-align: center;
 }
 
 #newsletter-section h1{
-  margin-top: 10px;
-  float: left
+  display: inline-block;
+  margin-right: 40px;
 }
 
-#newsletter-section form{
-  /* margin-left: 600px; */
+#newsletter-section .form{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* #newsletter-section h1{
+  margin-top: 10px;
+  float: left
+} */
+
+/* #newsletter-section form{
   float: right;
   margin: 20px;
   margin-right: 100px;
+  margin-top: 15px;
+} */
+
+
+#newsletter-section input[type="email"]{
+  padding: 5px;
+  width: 225px;
+  border-radius: 5px;
+
 }
+
+ .newsletter-btn{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 30px;
+  margin-left: 5px;
+
+}
+
+.newsletter-btn:hover{
+  color: #393f4d;
+}
+
+/* Introduction Section */
+#intro-section h1{
+  color: #d4d4dc;
+  text-align: center;
+  margin-top: 25px;
+  line-height: 1.8em;
+}
+
+#intro-section p{
+  color: #d4d4dc;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+}
+
+.cards1 img{
+    width: 100%;
+}
+
+.cards2 img{
+  width: 100%;
+}
+
+
+
+/* Content Section */
+
+/* #content-cards{
+  padding: 2em 1em 1em;
+  /* display: inline-grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 1em; */
+
+
+
+
+.card-image-placement{
+  background-image: url('../images/content-cards-background-img.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  /* z-index: 1; */
+
+/* height: 500px; */
+
+}
+
+
+
+.cards1{
+  display: block;
+  background-color: #feda6a;
+  border: 4px solid #393f4d;
+
+}
+
+
+
+.cards2{
+  display: block;
+  background-color: #d4d4dc;
+  border: 4px solid #feda6a;
+}
+
+#content-cards ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+#content-cards li{
+  margin-bottom: 1em;
+  background-color: #d4d4dc;
+  color: #1d1e22;
+  display: inline-block;
+  width: 25%;
+  margin: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  vertical-align: top;
+}
+
+#content-cards .card-info{
+  padding: 0.5em;
+}
+
+#content-cards .card-info h1{
+  color: #393f4d;
+  margin-top: 18px;
+  text-align: center;
+}
+
+#content-cards .card-info p{
+   font-size: 12px;
+   margin-top: 25px;
+   text-align: center;
+   line-height: 1em;
+}
+
+ #desc-btn{
+  padding: 8px;
+  color: #f4f9fc;
+  border-color: #ab8f37;
+  transition: 0.5s;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#desc-btn:hover{
+  color: #393f4d;
+}
+
+ #history-btn{
+  padding: 8px;
+  color: #f4f9fc;
+  border-color: #ab8f37;
+  margin-top: 35px;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+ #history-btn:hover{
+  color: #393f4d;
+}
+
+/* Robin Boyd Section */
+
+#boyd-info-section .boyd-image-container{
+  background-image: url('../images/robin-boyd-image.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+
+.boyd-content h1{
+  float: right;
+  margin-top: 205px;
+  margin-right: 40px;
+  font-size: 26px;
+  color: #d4d4dc;
+}
+
+
+
+
+
+
+
+
+/* .content-title-1 h1{
+  margin-left: 240px;
+  margin-top: 20px;
+  color: white;
+}
+
+.content-description-1 p{
+  margin-left: 30px;
+  float: left;
+  font-size: 14px;
+  line-height: 2em;
+  font-family: 'Merriweather', serif;
+  margin-top: 20px;
+  color: white;
+
+} */
+
+
+
+
+
+
 
 
 /*
@@ -199,7 +467,7 @@ nav li{
 /* #logo-section{
    margin: 0;
    width: 200px;
-   background-repeat: no-repeat;
+   -image-repeat: no-repeat;
 }  */
 
 /* nav ul li a{
