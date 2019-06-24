@@ -1,21 +1,42 @@
-/********************** USE LATER!!!!!! ****************************/
-
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Merriweather&display=swap');
-/* font-family: 'Lora', serif;
-font-family: 'Merriweather', serif; */
 
-/* Global used classes */
+/*************** GLOBAL/COMMON USED CLASSES ****************/
  .wrapper{
   max-width: 1920px;
   width: 90%;
   margin: auto;
   overflow: hidden;
-
-
 }
 
+/***** This h1 code is for both the newsletter section h1 and introduction section h1 elements *****/
+h1{
+  font-size: 30px;
+  font-family: 'Lora', serif;
+}
+
+/****** Common Button Styling Applied  ******/
+.common-btn-styling{
+  border: 3px solid #feda6a;
+  font-family: 'Merriweather', serif;
+  cursor: pointer;
+  color: #ffff;
+  border-radius: 5px;
+  transition: 0.6s;
+  background-color: #393f4d;
+  display: inline-block;
+  text-decoration: none;
+
+}
+/*************** GLOBAL/COMMON USED CLASSES ENDS HERE ****************/
+
+
+
+/* This html code changes the font size and font family of the navigation links and the smooth scrolling
+property is enabled when "Learn More" button in the intro section is clicked */
 html{
   scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: 'Merriweather', serif;
 }
 
 body{
@@ -23,13 +44,57 @@ body{
   height: 100%;
 }
 
+/************************* HEADER SECTION STARTS HERE *****************************/
 
+/****** This whole section of code is dedicated to the header and nav, which is within the header.
+I have applied various styles to the navigation, including before and after hover effects.******/
 
-/****** This whole section of code is dedicated to the navigation link. I have applied various styles to the
-including before and after hover effects******/
+/*This code is for the hero image, which is displayed on the homepage*/
+#header{
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-image: url('../images/churchill-hero-img.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-/********************** Styling the navigation links ********************/
-/* This code gives the navigation links style in total */
+}
+
+/* This styling code is for the text that is displayed on the header section */
+#header .hero-image-content{
+  color: #d4d4dc;
+  text-align: center;
+
+}
+
+#header .hero-image-content h1{
+  margin-top: 50px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+}
+
+#header p{
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.hero-image-content-button{
+  text-align: center;
+}
+
+/* I have applied styling to the anchor tag, which is applied on the header image button */
+a.common-btn-styling{
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
 #header nav ul{
   display: flex;
   transition: 0.6s;
@@ -50,19 +115,21 @@ including before and after hover effects******/
 
 }
 
-/* #header nav{
-  background-color: grey;
-  width: 100%;
-} */
+/********  single text highlight styles applied ************/
 
-/* This code changes the font size and font family of the navigation links */
-html{
-  font-size: 10px;
-  font-family: 'Merriweather', serif;
+/* This code is for the text highlight that has been set on the "description" nav link.*/
+#header nav .nav-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
 }
 
+/* This code is for the text highlight that has been set on the header-image heading (h1) */
+#header h1 .hero-content-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
 
-/********************** Website Image Logo ********************/
+/********* Header Website Image Logo ************/
 /* This code is for the image logo */
 .index-logo{
   width: 150px;
@@ -71,132 +138,12 @@ html{
   position: relative;
   margin: 10px 15px 15px 10px;
   transition: 0.6s;
-  /* transition: 0.8s;
-  transform-origin: left; */
-
 }
-
-/**************** Navigation highlighting single text styles applied **************************/
-
-/* This code is for the text highlight that has been set on the description nav link.*/
-#header nav .nav-text-highlight{
-  color: #feda6a;
-  font-weight: lighter;
-}
-
-#header h1 .hero-content-highlight{
-  color: #feda6a;
-  font-weight: lighter;
-}
-
-#intro-section p .intro-text-highlight{
-  color: #feda6a;
-  font-weight: lighter;
-}
-
-#intro-section h1 .intro-text-highlight{
-  color: #feda6a;
-  font-weight: lighter;
-}
+/*********************** HEADER ENDS HERE ************************/
 
 
 
-
-/************************** Main Content Styles Applied ************************/
-
-/*This code is for the hero image, which is displayed on the homepage*/
-#header{
-  width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  background-image: url('../images/churchill-hero-img.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-
-}
-
-/* This code is for the hero image content */
-#header .hero-image-content{
-  color: #d4d4dc;
-  text-align: center;
-
-}
-
-#header .hero-image-content h1{
-  margin-top: 50px;
-  font-size: 50px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.hero-image-content-button{
-  text-align: center;
-}
-
-
-
-
-h1{
-  font-size: 30px;
-  font-family: 'Lora', serif;
-
-
-}
-
-#header p{
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  line-height: 2em;
-}
-
-/* Button styles applied */
-
-.intro-btn{
-
-  margin-top: 50px;
-  padding: 10px 20px;
-
-
-}
-
-/* Styling button  */
-
-.common-btn-styling{
-  border: 3px solid #feda6a;
-  font-family: 'Merriweather', serif;
-  cursor: pointer;
-  color: #ffff;
-  border-radius: 5px;
-  transition: 0.6s;
-  background-color: #393f4d;
-  display: inline-block;
-  text-decoration: none;
-
-}
-
-a.common-btn-styling{
-  font-size: 14px;
-  text-decoration: none;
-  display: inline-block;
-
-}
-
-
-
-
-/* Button Hover Effects */
-
-.intro-btn:hover{
-  color: #393f4d;
-}
-
-
-
-/* Newsletter Section */
-
+/******************** NEWSLETTER SECTION STARTS HERE **********************/
 #newsletter-section{
   border-top: 2px solid #feda6a;
   border-bottom: 2px solid #feda6a;
@@ -216,19 +163,6 @@ a.common-btn-styling{
   vertical-align: top;
 }
 
-/* #newsletter-section h1{
-  margin-top: 10px;
-  float: left
-} */
-
-/* #newsletter-section form{
-  float: right;
-  margin: 20px;
-  margin-right: 100px;
-  margin-top: 15px;
-} */
-
-
 #newsletter-section input[type="email"]{
   padding: 5px;
   width: 225px;
@@ -236,7 +170,8 @@ a.common-btn-styling{
 
 }
 
- .newsletter-btn{
+/* Newsletter buttion styles applied */
+.newsletter-btn{
   padding-left: 5px;
   padding-right: 5px;
   height: 30px;
@@ -247,8 +182,12 @@ a.common-btn-styling{
 .newsletter-btn:hover{
   color: #393f4d;
 }
+/**************** NEWSLETTER SECTION ENDS HERE *******************/
 
-/* Introduction Section */
+
+
+
+/************** INTRODUCTION SECTION STARTS HERE  *****************/
 #intro-section h1{
   color: #d4d4dc;
   text-align: center;
@@ -265,27 +204,35 @@ a.common-btn-styling{
   letter-spacing: 0.5px;
 }
 
-.cards1 img{
-    width: 100%;
+/* This code is for the text highlight that has been set on the introduction heading (h1) */
+#intro-section h1 .intro-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
 }
 
-.cards2 img{
-  width: 100%;
+/* This code is for the text highlight that has been set on the introduction paragraph (p)*/
+#intro-section p .intro-text-para-highlight{
+  color: #feda6a;
+  font-weight: lighter;
 }
 
+/****** Introduction Section Button Styles Applied ******/
+
+.intro-btn{
+  margin-top: 50px;
+  padding: 10px 20px;
+}
+
+/* Button Hover Effects */
+.intro-btn:hover{
+  color: #393f4d;
+}
+/**************** INTRODUCTION SECTION ENDS HERE ****************/
 
 
-/* Content Section */
-
-/* #content-cards{
-  padding: 2em 1em 1em;
-  /* display: inline-grid;
-  grid-template-columns: 70% 30%;
-  grid-column-gap: 1em; */
 
 
-
-
+/**************** CONTENT CARDS SECTION STARTS HERE ***************/
 .card-image-placement{
   background-image: url('../images/content-cards-background-img.jpg');
   background-attachment: fixed;
@@ -294,14 +241,9 @@ a.common-btn-styling{
   background-repeat: no-repeat;
   width: 100%;
   height: 90vh;
-  /* z-index: 1; */
-
-/* height: 500px; */
-
 }
 
-
-
+/* Description Content Card */
 .cards1{
   display: block;
   background-color: #feda6a;
@@ -309,12 +251,21 @@ a.common-btn-styling{
 
 }
 
-
-
+/* History Content Card */
 .cards2{
   display: block;
   background-color: #d4d4dc;
   border: 4px solid #feda6a;
+}
+
+/* Description Content Card Image */
+.cards1 img{
+    width: 100%;
+}
+
+/* History Content Card Image */
+.cards2 img{
+  width: 100%;
 }
 
 #content-cards ul{
@@ -351,9 +302,10 @@ a.common-btn-styling{
    font-size: 12px;
    margin-top: 25px;
    text-align: center;
-   line-height: 1em;
+   line-height: 20px;
 }
 
+/* Description Content Card Button */
  #desc-btn{
   padding: 8px;
   color: #f4f9fc;
@@ -368,6 +320,7 @@ a.common-btn-styling{
   color: #393f4d;
 }
 
+/* History Content Card Button */
  #history-btn{
   padding: 8px;
   color: #f4f9fc;
@@ -382,9 +335,11 @@ a.common-btn-styling{
  #history-btn:hover{
   color: #393f4d;
 }
+/************** CONTENT CARD SECTION ENDS HERE ***************/
 
-/* Robin Boyd Section */
 
+
+/**************** ROBIN BOYD SECTION STARTS HERE ********************/
 #boyd-info-section .boyd-image-container{
   background-image: url('../images/robin-boyd-image.jpg');
   background-attachment: fixed;
@@ -402,85 +357,4 @@ a.common-btn-styling{
   font-size: 26px;
   color: #d4d4dc;
 }
-
-
-
-
-
-
-
-
-/* .content-title-1 h1{
-  margin-left: 240px;
-  margin-top: 20px;
-  color: white;
-}
-
-.content-description-1 p{
-  margin-left: 30px;
-  float: left;
-  font-size: 14px;
-  line-height: 2em;
-  font-family: 'Merriweather', serif;
-  margin-top: 20px;
-  color: white;
-
-} */
-
-
-
-
-
-
-
-
-/*
-nav ul li a{
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-} */
-
-/* This code is targeting the id logo section which happens to float the logo to the left of the webpage */
-/* header #logo-section{
-  float: left;
-} */
-
-/* This code is targeting h1 tag, which is inside the id logo section*/
-/* header #logo-section img{
-  margin:0;
-} */
-
-/* This code is targeting the nav bar, which is inside the header tag. By targeting the nav, we are floating it to the right of the webpage */
-/* header nav{
-  float: right;
-} */
-
-
-/* Logo Section */
-/* #logo-section{
-   margin: 0;
-   width: 200px;
-   -image-repeat: no-repeat;
-}  */
-
-/* nav ul li a{
-  text-decoration: none;
-  text-decoration: none;
-  color: lightgrey;
-  padding: 30px;
-  margin-bottom: 10px;
-
-}
-
-nav ul li{
-  display: inline;
-  float: right;
-  margin-right: 5px;
-}  */
+/**************** ROBIN BOYD SECTION ENDS HERE ********************/

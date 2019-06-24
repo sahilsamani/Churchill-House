@@ -11,7 +11,7 @@ header nav{
   font-size: 15px;
 }
 
-/* This code is for the before hover effects */
+/* This code is for the "before" hover effects */
 header nav ul li a::before{
   content: '';
   position: absolute;
@@ -22,7 +22,7 @@ header nav ul li a::before{
   transform: scaleX(0);
 }
 
-/* This code is for the after hover effects */
+/* This code is for the "after" hover effects */
 #header nav ul li a::after{
   content: '';
   position: absolute;
@@ -43,7 +43,7 @@ header nav ul li a::before{
 }
 
 /* This code is for the after hover effects. The transform-origin property allows me to change the position
-of yellow hover effect below the links to left and the transition allows the hover effect to move smoothly
+of the yellow hover effect below the links to the left and the transition allows the hover effect to move smoothly
 from left to right */
 #header nav ul li a::after{
   bottom: 0;
