@@ -3,7 +3,7 @@
 /*************** GLOBAL/COMMON USED CLASSES ****************/
  .wrapper{
   max-width: 1920px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -29,7 +29,7 @@ h1{
 }
 /*************** GLOBAL/COMMON USED CLASSES ENDS HERE ****************/
 
-
+/******************* CSS CODE FOR INDEX HOMEPAGE STARTS HERE*********************/
 
 /* This html code changes the font size and font family of the navigation links and the smooth scrolling
 property is enabled when "Learn More" button in the intro section is clicked */
@@ -81,6 +81,7 @@ I have applied various styles to the navigation, including before and after hove
   font-family: 'Merriweather', serif;
   font-size: 20px;
   line-height: 2em;
+  padding: 10px;
 }
 
 .hero-image-content-button{
@@ -228,7 +229,6 @@ a.common-btn-styling{
   color: #393f4d;
 }
 /**************** INTRODUCTION SECTION ENDS HERE ****************/
-
 
 
 
@@ -425,11 +425,15 @@ a.common-btn-styling{
   font-weight: bold;
 
 }
+/******************* CSS CODE FOR INDEX HOMEPAGE ENDS HERE*********************/
 
-/************************* CSS SECTION FOR DESCRIPTION PAGE *************************/
+
+
+
+/************************* CSS CODE FOR DESCRIPTION HOMEPAGE STARTS HERE *************************/
 
 /***************** HEADER SECTION STARTS HERE ************************/
-#header .header-image{
+#header-desc .header-image{
   width: 100%;
   height: 100vh;
   min-height: 100%;
@@ -440,7 +444,66 @@ a.common-btn-styling{
   background-position: center;
 
 }
+
+
+/* This styling code is for the text that is displayed on the header section */
+#header-desc .hero-image-content{
+  color: #d4d4dc;
+  text-align: center;
+
+}
+
+#header-desc .hero-image-content h1{
+  margin-top: 50px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+}
+
+#header-desc p{
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  line-height: 2em;
+  padding: 10px;
+}
+
+#header-desc nav ul{
+  display: flex;
+  transition: 0.6s;
+
+}
+
+#header-desc nav ul li{
+  list-style: none;
+}
+
+#header-desc nav ul li a{
+  text-decoration: none;
+  color:  #bebec6;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 1rem 0;
+  margin: 0 3rem;
+
+}
+
+/********  single text highlight styles applied ************/
+
+/* This code is for the text highlight that has been set on the "description" nav link.*/
+#header-desc nav .nav-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+/* This code is for the text highlight that has been set on the header-image heading (h1) */
+#header-desc h1 .hero-content-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
 /***************** HEADER SECTION ENDS HERE ************************/
+
 
 
 /************* DESCRIPTION INTRODUCTION SECTION STARTS HERE *********************/
@@ -458,6 +521,7 @@ a.common-btn-styling{
   padding-bottom: 14px;
   line-height: 2em;
   letter-spacing: 0.5px;
+  padding: 30px;
 }
 
 /* This code is for the text highlight that has been set on the introduction heading (h1) */
@@ -475,124 +539,88 @@ a.common-btn-styling{
 
 /***************** MAIN BUILDING SECTION STARTS HERE ************************/
 
-.main-building-background-image-placement{
-  background-image: url('../images/main-building-section-desc.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* This code sets the background image of the main building section */
+#main-building-section{
+background-image: url('../images/main-building-section-desc.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/**************** Box 1 Content Starts Here************/
+.mainbox1{
   width: 100%;
-  height: 170vh;
-}
-
-/* Main Building Section Box Content 1 */
-#main-building-section .main-build-box1{
-  margin-left: 84px;
-  width: 280px;
-  height: 335px;
-  position: relative;
-  top: 80px;
-  border-radius: 10px;
-  background-color: #393f4d;
-  /* I added couple of vendor prefixes. This will support mozilla, google chrome etc browers */
-  background: -moz-linear-gradient(to right, #393f4d 30%, #1d1e22 90%);
-  background: -webkit-linear-gradient(to right, #393f4d 30%, #1d1e22 90%);
-  background: linear-gradient(to right, #393f4d 30%, #1d1e22 90%);
-  border: 4px solid #feda6a;
-}
-
-.main-building-img-1{
-  background-image: url('../images/main-building-img-1.jpg');
-  margin-left: 140px;
-  width: 370px;
-  height: 300px;
-  border: 4px solid #1d1e22;
-  border-radius: 8px;
-  position: relative;
-  bottom: 43px;
-}
-
-.main-build-1-text-container{
-  /* background-color: grey; */
-  width: 470px;
-  height: 300px;
-  position: relative;
-  left: 619px;
-  bottom: 320px;
+  height: 400px;
+  background-color: grey;
 
 }
 
+.box1{
 
-.main-build-1-text-container h1{
-  text-align: center;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box1 p{
   color: #d4d4dc;
-}
-
-.main-build-1-text-container p{
-  color: #d4d4dc;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   padding-bottom: 14px;
   line-height: 2em;
   letter-spacing: 0.5px;
-  padding-top: 12px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  bottom: 65px;
 }
 
-#main-building-section .main-building-highlight{
+.box1 img{
+  width: 100%;
+  margin-top: 91px;
+}
+/**************** Box 1 Content Ends Here************/
+
+
+
+/**************** Box 2 Content Starts Here************/
+.box2{
+  width: 49.5%;
+  display: inline-block;
+}
+
+.box2 p{
+color: #d4d4dc;
+font-size: 15px;
+text-align: center;
+padding-bottom: 14px;
+line-height: 2em;
+letter-spacing: 0.5px;
+padding: 30px;
+margin: 40px;
+margin-top: 90px;
+}
+
+.box2 h1{
+  color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px;
+}
+
+.box2 .main-building-text-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
-/************* Main Building Section Box Content 1 FINISHES HERE****************/
 
-
-/************** Main Building Section Box Content 2 STARTS HERE *****************/
-#main-building-section .main-build-box2{
-  margin-left: 84px;
-  width: 280px;
-  height: 350px;
+.box2 img{
+  width: 100%;
   position: relative;
-  left: 788px;
-  top: 266px;
-  border-radius: 10px;
-  background-color: #393f4d;
-  /* I added couple of vendor prefixes. This will support mozilla, google chrome etc browers */
-  background: -moz-linear-gradient(to right, #393f4d 30%, #1d1e22 90%);
-  background: -webkit-linear-gradient(to right, #393f4d 30%, #1d1e22 90%);
-  background: linear-gradient(to right, #393f4d 30%, #1d1e22 90%);
-  border: 4px solid #feda6a;
-}
-
-.main-build-2-text-container{
-  background-color: grey;
-  width: 470px;
-  height: 300px;
-  position: relative;
-  right: 819px;
-  bottom: 314px;
 
 }
+/**************** Box 2 Content Ends Here************/
 
-.main-build-2-text-container p{
-  color: #d4d4dc;
-  font-size: 14px;
-  text-align: center;
-  padding-bottom: 14px;
-  line-height: 2em;
-  letter-spacing: 0.5px;
-  padding-top: 12px;
-}
-
-.main-building-img-2{
-  background-image: url('../images/main-building-img-2.jpg');
-  right: 288px;
-  width: 370px;
-  height: 279px;
-  background-repeat: no-repeat;
-  border: 4px solid #1d1e22;
-  border-radius: 8px;
-  position: relative;
-  bottom: 43px;
-}
 
 
 /****************** NORTH WING SECTION STARTS HERE *****************/
@@ -608,6 +636,7 @@ a.common-btn-styling{
   font-size: 15px;
   text-align: center;
   padding-bottom: 14px;
+  padding: 30px;
   line-height: 2em;
   letter-spacing: 0.5px;
 }
@@ -622,10 +651,95 @@ a.common-btn-styling{
   color: #feda6a;
   font-weight: lighter;
 }
+/********* NORTH WING SECTION ENDS HERE ********/
 
 
-/************************* CSS SECTION FOR STATEMENT OF SIGNIFICANCE PAGE *************************/
-#header .header-image{
+/************* ANALYSIS SECTION STARTS HERE ****************/
+
+#stylistic-analysis-section{
+background-image: url('../images/main-building-section-desc.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+#stylistic-analysis-section .box1{
+
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#stylistic-analysis-section .box1 p{
+  color: #d4d4dc;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  bottom: 65px;
+}
+
+#stylistic-analysis-section .box1 img{
+  width: 100%;
+  margin-top: 91px;
+}
+/**************** Box 1 Content Ends Here************/
+
+
+
+/**************** Box 2 Content Starts Here************/
+#stylistic-analysis-section .box2{
+  width: 49.5%;
+  display: inline-block;
+}
+
+#stylistic-analysis-section .box2 p{
+color: #d4d4dc;
+font-size: 15px;
+text-align: center;
+padding-bottom: 14px;
+line-height: 2em;
+letter-spacing: 0.5px;
+padding: 30px;
+margin: 40px;
+margin-top: 90px;
+}
+
+#stylistic-analysis-section .box2 h1{
+  color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px;
+}
+
+#stylistic-analysis-section .box2 .analysis-section-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#stylistic-analysis-section .box2 img{
+  width: 100%;
+  position: relative;
+  left: 10px;
+}
+/**************** Box 2 Content Ends Here************/
+
+/************************* CSS CODE FOR DESCRIPTION HOMEPAGE ENDS HERE *************************/
+
+
+
+
+
+
+/************************* CSS CODE FOR STATEMENT OF SIGNIFICANCE HOMEPAGE STARTS HERE *************************/
+
+/********HEADER SECTION OF STATEMENT OF SIGNIFICANCE  ********/
+#header-statement-Of-Sig .header-image{
   width: 100%;
   height: 100vh;
   min-height: 100%;
@@ -634,7 +748,70 @@ a.common-btn-styling{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
+
+/* This styling code is for the text that is displayed on the header section */
+#header-statement-Of-Sig .hero-image-content{
+  color: #d4d4dc;
+  text-align: center;
+
+}
+
+#header-statement-Of-Sig .hero-image-content h1{
+  margin-top: 50px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+}
+
+#header-statement-Of-Sig p{
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  line-height: 2em;
+  padding: 10px;
+}
+
+#header-statement-Of-Sig nav ul{
+  display: flex;
+  transition: 0.6s;
+
+}
+
+#header-statement-Of-Sig nav ul li{
+  list-style: none;
+}
+
+#header-statement-Of-Sig nav ul li a{
+  text-decoration: none;
+  color:  #bebec6;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 1rem 0;
+  margin: 0 3rem;
+
+}
+
+/********  single text highlight styles applied ************/
+
+/* This code is for the text highlight that has been set on the "description" nav link.*/
+#header-statement-Of-Sig nav .nav-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+/* This code is for the text highlight that has been set on the header-image heading (h1) */
+#header-statement-Of-Sig h1 .hero-content-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+
+
+
+
+
 
 
 #statementOfSig-section h1{
@@ -651,6 +828,7 @@ a.common-btn-styling{
   padding-bottom: 14px;
   line-height: 2em;
   letter-spacing: 0.5px;
+  padding: 30px;
 }
 
 /* This code is for the text highlight that has been set on the introduction heading (h1) */
@@ -663,4 +841,77 @@ a.common-btn-styling{
 #statementOfSig-section p .statementOfSig-text-para-highlight{
   color: #feda6a;
   font-weight: lighter;
+}
+/* ************************************* */
+
+#statementOfSig-image-section{
+background-image: url('../images/main-building-section-desc.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+#statementOfSig-image-section .box1{
+
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#statementOfSig-image-section .box1 p{
+  color: #d4d4dc;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  bottom: 28px;
+}
+
+#statementOfSig-image-section .box1 img{
+  width: 100%;
+  margin-top: 91px;
+}
+/**************** Box 1 Content Ends Here************/
+
+
+
+/**************** Box 2 Content Starts Here************/
+#statementOfSig-image-section .box2{
+  width: 49.5%;
+  display: inline-block;
+}
+
+#statementOfSig-image-section .box2 p{
+color: #d4d4dc;
+font-size: 15px;
+text-align: center;
+padding-bottom: 14px;
+line-height: 2em;
+letter-spacing: 0.5px;
+padding: 30px;
+margin: 40px;
+margin-top: 90px;
+}
+
+#statementOfSig-image-section .box2 h1{
+  color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px;
+}
+
+#statementOfSig-image-section .box2 .analysis-section-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#statementOfSig-image-section .box2 img{
+  width: 100%;
+  position: relative;
+  left: 10px;
 }
