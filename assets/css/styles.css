@@ -10,7 +10,7 @@
 
 /***** This h1 code is for both the newsletter section h1 and introduction section h1 elements *****/
 h1{
-  font-size: 30px;
+  font-size: 2.308em;
   font-family: 'Lora', serif;
 }
 
@@ -35,8 +35,10 @@ h1{
 property is enabled when "Learn More" button in the intro section is clicked */
 html{
   scroll-behavior: smooth;
-  font-size: 10px;
+  font-size: 0.769em;
   font-family: 'Merriweather', serif;
+  /* This small code removes the horizontal scrolling that I previously had */
+  overflow-x: hidden;
 }
 
 body{
@@ -66,6 +68,8 @@ I have applied various styles to the navigation, including before and after hove
 #header .hero-image-content{
   color: #d4d4dc;
   text-align: center;
+  position: relative;
+  top: 7%;
 
 }
 
@@ -79,18 +83,20 @@ I have applied various styles to the navigation, including before and after hove
 
 #header p{
   font-family: 'Merriweather', serif;
-  font-size: 20px;
+  font-size: 1.538em;
   line-height: 2em;
   padding: 10px;
 }
 
 .hero-image-content-button{
   text-align: center;
+  position: relative;
+  top: 33px;
 }
 
 /* I have applied styling to the anchor tag, which is applied on the header image button */
 a.common-btn-styling{
-  font-size: 14px;
+  font-size: 1.077em;
   text-decoration: none;
   display: inline-block;
 
@@ -108,7 +114,7 @@ a.common-btn-styling{
 
 #header nav ul li a{
   text-decoration: none;
-  color:  #bebec6;
+  color: #e7f0f9;
   letter-spacing: 0.5px;
   position: relative;
   padding: 1rem 0;
@@ -198,11 +204,12 @@ a.common-btn-styling{
 
 #intro-section p{
   color: #d4d4dc;
-  font-size: 15px;
+  font-size: 1.154em;
   text-align: center;
   padding-bottom: 14px;
   line-height: 2em;
   letter-spacing: 0.5px;
+  padding: 30px;
 }
 
 /* This code is for the text highlight that has been set on the introduction heading (h1) */
@@ -299,7 +306,7 @@ a.common-btn-styling{
 }
 
 #content-cards .card-info p{
-   font-size: 12px;
+   font-size: 0.923em;
    margin-top: 25px;
    text-align: center;
    line-height: 20px;
@@ -420,7 +427,7 @@ a.common-btn-styling{
   padding-top: 12px;
   padding-bottom: 15px;
   width: 100%;
-  font-size: 12px;
+  font-size: 0.923em;
   color: black;
   font-weight: bold;
 
@@ -455,7 +462,7 @@ a.common-btn-styling{
 
 #header-desc .hero-image-content h1{
   margin-top: 50px;
-  font-size: 50px;
+  font-size: 3.846em;
   margin-bottom: 10px;
   line-height: 1.5;
   font-family: 'Lora', serif;
@@ -463,7 +470,7 @@ a.common-btn-styling{
 
 #header-desc p{
   font-family: 'Merriweather', serif;
-  font-size: 20px;
+  font-size: 1.538em;
   line-height: 2em;
   padding: 10px;
 }
@@ -480,7 +487,7 @@ a.common-btn-styling{
 
 #header-desc nav ul li a{
   text-decoration: none;
-  color:  #bebec6;
+  color: #e7f0f9;
   letter-spacing: 0.5px;
   position: relative;
   padding: 1rem 0;
@@ -516,7 +523,7 @@ a.common-btn-styling{
 
 #description-section p{
   color: #d4d4dc;
-  font-size: 15px;
+  font-size: 1.154em;
   text-align: center;
   padding-bottom: 14px;
   line-height: 2em;
@@ -565,7 +572,7 @@ background-attachment: fixed;
 
 .box1 p{
   color: #d4d4dc;
-  font-size: 15px;
+  font-size: 1.154em;
   text-align: center;
   padding-bottom: 14px;
   line-height: 2em;
@@ -592,7 +599,7 @@ background-attachment: fixed;
 
 .box2 p{
 color: #d4d4dc;
-font-size: 15px;
+font-size: 1.154em;
 text-align: center;
 padding-bottom: 14px;
 line-height: 2em;
@@ -633,7 +640,7 @@ margin-top: 90px;
 
 #north-wing-section p{
   color: #d4d4dc;
-  font-size: 15px;
+  font-size: 1.154em;
   text-align: center;
   padding-bottom: 14px;
   padding: 30px;
@@ -673,7 +680,7 @@ background-attachment: fixed;
 
 #stylistic-analysis-section .box1 p{
   color: #d4d4dc;
-  font-size: 15px;
+  font-size: 1.154em;
   text-align: center;
   padding-bottom: 14px;
   line-height: 2em;
@@ -700,7 +707,7 @@ background-attachment: fixed;
 
 #stylistic-analysis-section .box2 p{
 color: #d4d4dc;
-font-size: 15px;
+font-size: 1.154em;
 text-align: center;
 padding-bottom: 14px;
 line-height: 2em;
@@ -760,7 +767,7 @@ margin-top: 90px;
 
 #header-statement-Of-Sig .hero-image-content h1{
   margin-top: 50px;
-  font-size: 50px;
+  font-size: 3.846em;
   margin-bottom: 10px;
   line-height: 1.5;
   font-family: 'Lora', serif;
@@ -785,7 +792,7 @@ margin-top: 90px;
 
 #header-statement-Of-Sig nav ul li a{
   text-decoration: none;
-  color:  #bebec6;
+  color: #e7f0f9;
   letter-spacing: 0.5px;
   position: relative;
   padding: 1rem 0;
@@ -808,12 +815,7 @@ margin-top: 90px;
 }
 
 
-
-
-
-
-
-
+/************ STATEMENT OF SIGIFICANCE IMAGE SECTION ****************/
 #statementOfSig-section h1{
   color: #d4d4dc;
   text-align: center;
@@ -842,26 +844,26 @@ margin-top: 90px;
   color: #feda6a;
   font-weight: lighter;
 }
-/* ************************************* */
+
 
 #statementOfSig-image-section{
-background-image: url('../images/main-building-section-desc.jpg');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+  background-image: url('../images/content-cards-background-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+/**************** Box 1 Content Starts Here************/
 #statementOfSig-image-section .box1{
-
-    width: 50%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #statementOfSig-image-section .box1 p{
   color: #d4d4dc;
-  font-size: 15px;
+  font-size: 1.154em;
   text-align: center;
   padding-bottom: 14px;
   line-height: 2em;
@@ -887,15 +889,15 @@ background-attachment: fixed;
 }
 
 #statementOfSig-image-section .box2 p{
-color: #d4d4dc;
-font-size: 15px;
-text-align: center;
-padding-bottom: 14px;
-line-height: 2em;
-letter-spacing: 0.5px;
-padding: 30px;
-margin: 40px;
-margin-top: 90px;
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 30px;
+  margin: 40px;
+  margin-top: 90px;
 }
 
 #statementOfSig-image-section .box2 h1{
@@ -915,3 +917,389 @@ margin-top: 90px;
   position: relative;
   left: 10px;
 }
+/************************* CSS CODE FOR STATEMENT OF SIGNIFICANCE HOMEPAGE ENDS HERE *************************/
+
+
+
+
+
+
+/************************* CSS CODE FOR HISTORY HOMEPAGE STARTS HERE *************************/
+
+/****************** HEADER SECTION **************/
+#header-history .header-image{
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-image: url('../images/history-header-image.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* This styling code is for the text that is displayed on the header section */
+#header-history .hero-image-content{
+  color: #d4d4dc;
+  text-align: center;
+
+}
+
+#header-history .hero-image-content h1{
+  margin-top: 50px;
+  font-size: 3.846em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+}
+
+#header-history p{
+  font-family: 'Merriweather', serif;
+  font-size: 1.538em;
+  line-height: 2em;
+  padding: 10px;
+}
+
+#header-history nav ul{
+  display: flex;
+  transition: 0.6s;
+
+}
+
+#header-history nav ul li{
+  list-style: none;
+}
+
+#header-history nav ul li a{
+  text-decoration: none;
+  color: #e7f0f9;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 1rem 0;
+  margin: 0 3rem;
+
+}
+
+/********  single text highlight styles applied ************/
+
+/* This code is for the text highlight that has been set on the "description" nav link.*/
+#header-history nav .nav-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+/* This code is for the text highlight that has been set on the header-image heading (h1) */
+#header-history h1 .hero-content-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+
+/************ HISTORY IMAGE SECTION ****************/
+#history-section h1{
+  color: #d4d4dc;
+  text-align: center;
+  margin-top: 25px;
+  line-height: 1.8em;
+}
+
+#history-section p{
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 30px;
+}
+
+/* This code is for the text highlight that has been set on the introduction heading (h1) */
+#history-section h1 .history-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+/* This code is for the text highlight that has been set on the introduction paragraph (p)*/
+#history-section p .history-text-para-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+
+#history-image-section{
+  background-image: url('../images/main-building-section-desc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/**************** Box 1 Content Starts Here************/
+#history-image-section .box1{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#history-image-section .box1 p{
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  bottom: 28px;
+}
+
+#history-image-section .box1 img{
+  width: 100%;
+  margin-top: 91px;
+}
+/**************** Box 1 Content Ends Here************/
+
+
+
+/**************** Box 2 Content Starts Here************/
+#history-image-section .box2{
+  width: 49.5%;
+  display: inline-block;
+}
+
+#history-image-section .box2 p{
+  color: #d4d4dc;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 30px;
+  margin: 40px;
+  margin-top: 90px;
+}
+
+#history-image-section .box2 h1{
+  color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px;
+}
+
+#history-image-section .box2 .history-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#history-image-section .box2 img{
+  width: 100%;
+  position: relative;
+  left: 10px;
+}
+
+
+
+
+
+
+/************************* CSS CODE FOR ROBIN BOYD HOMEPAGE STARTS HERE *************************/
+/****************** HEADER SECTION **************/
+#header-boyd .header-image{
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-image: url('../images/history-header-image.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* This styling code is for the text that is displayed on the header section */
+#header-boyd .hero-image-content{
+  color: #d4d4dc;
+  text-align: center;
+
+}
+
+#header-boyd .hero-image-content h1{
+  margin-top: 50px;
+  font-size: 3.846em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+}
+
+#header-boyd p{
+  font-family: 'Merriweather', serif;
+  font-size: 1.538em;
+  line-height: 2em;
+  padding: 10px;
+}
+
+#header-boyd nav ul{
+  display: flex;
+  transition: 0.6s;
+
+}
+
+#header-boyd nav ul li{
+  list-style: none;
+}
+
+#header-boyd nav ul li a{
+  text-decoration: none;
+  color: #e7f0f9;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 1rem 0;
+  margin: 0 3rem;
+
+}
+
+/********  single text highlight styles applied ************/
+
+/* This code is for the text highlight that has been set on the "description" nav link.*/
+#header-boyd nav .nav-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+/* This code is for the text highlight that has been set on the header-image heading (h1) */
+#header-boyd h1 .hero-content-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+
+/************ HISTORY IMAGE SECTION ****************/
+#boyd-section h1{
+  color: #d4d4dc;
+  text-align: center;
+  margin-top: 25px;
+  line-height: 1.8em;
+}
+
+#boyd-section p{
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 30px;
+}
+
+/* This code is for the text highlight that has been set on the introduction heading (h1) */
+#boyd-section h1 .history-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+/* This code is for the text highlight that has been set on the introduction paragraph (p)*/
+#boyd-section p .history-text-para-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+
+#boyd-image-section{
+  background-image: url('../images/main-building-section-desc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/**************** Box 1 Content Starts Here************/
+#boyd-image-section .box1{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#boyd-image-section .box1 p{
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  bottom: 28px;
+}
+
+#boyd-image-section .box1 img{
+  width: 100%;
+  margin-top: 91px;
+}
+/**************** Box 1 Content Ends Here************/
+
+
+
+/**************** Box 2 Content Starts Here************/
+#boyd-image-section .box2{
+  width: 49.5%;
+  display: inline-block;
+}
+
+#boyd-image-section .box2 p{
+  color: #d4d4dc;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 30px;
+  margin: 40px;
+  margin-top: 90px;
+}
+
+#boyd-image-section .box2 h1{
+  color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px;
+}
+
+#boyd-image-section .box2 .history-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#boyd-image-section .box2 img{
+  width: 100%;
+  position: relative;
+  left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* @media screen and (max-width: 768px) {
+  .wrapper{
+    width: 98%;
+  }
+
+    #newsletter-section {
+          float: none;
+          clear: left;
+          width: 100%;
+      }
+
+  } */
