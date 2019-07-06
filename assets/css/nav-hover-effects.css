@@ -3,16 +3,9 @@
 /************************ Navigation Hover Effects  **********************/
 /* This code gives "hover" style to the navigation links. It centers them in the center, gives them padding
 and the navigation links get displayed as flex */
-header nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px;
-}
 
 /* This code is for the "before" hover effects */
-header nav ul li a::before{
+#header nav ul li a::before{
   content: '';
   position: absolute;
   width: 100%;
@@ -71,13 +64,7 @@ allows the hover effect to occur. Without the transform property, the hover effe
 
 
 /******************** NAVIGATION HOVER EFFECT FOR DESCRIPTION PAGE ******************/
-#header-desc nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px;
-}
+
 
 /* This code is for the "before" hover effects */
 #header-desc nav ul li a::before{
@@ -264,6 +251,141 @@ allows the hover effect to occur. Without the transform property, the hover effe
 
 /* Comments same as above */
 #header-history nav ul li a:hover::after{
+  transform: scaleX(1);
+
+}
+
+
+
+
+
+
+
+/******************** NAVIGATION HOVER EFFECT FOR ROBIN BOYD PAGE ******************/
+#header-boyd nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* This code is for the "before" hover effects */
+#header-boyd nav ul li a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #feda6a;
+  left: 0;
+  transform: scaleX(0);
+}
+
+/* This code is for the "after" hover effects */
+#header-boyd nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #feda6a;
+  left: 0;
+  transform: scaleX(0);
+}
+
+/* This code is for the before hover effects. In this code, the transform-origin and transition property add
+ simply animations on hover to the navigation links.  */
+#header-boyd nav ul li a::before{
+  top: 0;
+  transform-origin: left;
+  transition: all 0.5s;
+
+}
+
+/* This code is for the after hover effects. The transform-origin property allows me to change the position
+of the yellow hover effect below the links to the left and the transition allows the hover effect to move smoothly
+from left to right */
+#header-boyd nav ul li a::after{
+  bottom: 0;
+  transform-origin: left;
+  transition: all 0.5s;
+
+}
+
+/* This code is for the before hover effects. The transform property is the main animation property that
+allows the hover effect to occur. Without the transform property, the hover effect would not appear */
+#header-boyd nav ul li a:hover::before{
+  transform: scaleX(1);
+
+}
+
+/* Comments same as above */
+#header-boyd nav ul li a:hover::after{
+  transform: scaleX(1);
+
+}
+
+
+
+
+/******************** NAVIGATION HOVER EFFECT FOR FOOTER SECTION  ******************/
+/* #footer-section nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+} */
+
+/* This code is for the "before" hover effects */
+#footer-section ul li a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #feda6a;
+  left: 0;
+  transform: scaleX(0);
+}
+
+/* This code is for the "after" hover effects */
+#footer-section ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #feda6a;
+  left: 0;
+  transform: scaleX(0);
+}
+
+/* This code is for the before hover effects. In this code, the transform-origin and transition property add
+ simply animations on hover to the navigation links.  */
+#footer-section ul li a::before{
+  top: 0;
+  transform-origin: left;
+  transition: all 0.5s;
+
+}
+
+/* This code is for the after hover effects. The transform-origin property allows me to change the position
+of the yellow hover effect below the links to the left and the transition allows the hover effect to move smoothly
+from left to right */
+#footer-section ul li a::after{
+  bottom: 0;
+  transform-origin: left;
+  transition: all 0.5s;
+
+}
+
+/* This code is for the before hover effects. The transform property is the main animation property that
+allows the hover effect to occur. Without the transform property, the hover effect would not appear */
+#footer-section ul li a:hover::before{
+  transform: scaleX(1);
+
+}
+
+/* Comments same as above */
+#footer-section ul li a:hover::after{
   transform: scaleX(1);
 
 }

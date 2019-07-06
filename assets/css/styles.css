@@ -102,6 +102,14 @@ a.common-btn-styling{
 
 }
 
+#header nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
 #header nav ul{
   display: flex;
   transition: 0.6s;
@@ -144,7 +152,7 @@ a.common-btn-styling{
   float: left;
   position: relative;
   margin: 10px 15px 15px 10px;
-  transition: 0.6s;
+
 }
 /*********************** HEADER ENDS HERE ************************/
 
@@ -178,7 +186,7 @@ a.common-btn-styling{
 }
 
 /* Newsletter buttion styles applied */
-.newsletter-btn{
+#newsletter-section .newsletter-btn{
   padding-left: 5px;
   padding-right: 5px;
   height: 30px;
@@ -186,7 +194,7 @@ a.common-btn-styling{
 
 }
 
-.newsletter-btn:hover{
+#newsletter-section .newsletter-btn:hover{
   color: #393f4d;
 }
 /**************** NEWSLETTER SECTION ENDS HERE *******************/
@@ -240,7 +248,7 @@ a.common-btn-styling{
 
 
 /**************** CONTENT CARDS SECTION STARTS HERE ***************/
-.card-image-placement{
+#content-cards .card-image-placement{
   background-image: url('../images/content-cards-background-img.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -251,7 +259,7 @@ a.common-btn-styling{
 }
 
 /* Description Content Card */
-.cards1{
+#content-cards .card-image-placement .cards1{
   display: block;
   background-color: #feda6a;
   border: 4px solid #393f4d;
@@ -259,19 +267,19 @@ a.common-btn-styling{
 }
 
 /* History Content Card */
-.cards2{
+#content-cards .card-image-placement .cards2{
   display: block;
   background-color: #d4d4dc;
   border: 4px solid #feda6a;
 }
 
 /* Description Content Card Image */
-.cards1 img{
+#content-cards .card-image-placement .cards1 img{
     width: 100%;
 }
 
 /* History Content Card Image */
-.cards2 img{
+#content-cards .card-image-placement .cards2 img{
   width: 100%;
 }
 
@@ -346,23 +354,45 @@ a.common-btn-styling{
 
 
 
+
 /**************** ROBIN BOYD SECTION STARTS HERE ********************/
-#boyd-info-section .boyd-image-container{
-  background-image: url('../images/robin-boyd-image (4).jpg');
-  /* background-attachment: fixed; */
-  background-position: center;
+#boyd-info-section .boyd-section-box-1{
+  background-image: url('../images/robin-boyd-section-img.jpg');
+  background-attachment: fixed;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 }
 
-.boyd-content h1{
-  float: right;
-  margin-top: 205px;
-  margin-right: 40px;
-  font-size: 26px;
-  color: #d4d4dc;
+/* This is for the small robin boyd image on the boyd section */
+#boyd-info-section .box1 img{
+  position: relative;
+  left: 117px;
+
+}
+
+#boyd-info-section .box2 h1{
+  /* color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px; */
+}
+
+#boyd-info-section .box2 p{
+    background-color: grey;
+    /* color: #d4d4dc;
+    font-size: 1.154em;
+    text-align: center;
+    padding-bottom: 14px;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    padding: 30px;
+    margin: 40px;
+    margin-top: 90px;
+    position: relative;
+    top: 81px;*/
 }
 /**************** ROBIN BOYD SECTION ENDS HERE ********************/
 
@@ -370,51 +400,47 @@ a.common-btn-styling{
 /***************** FOOTER SECTION STARTS HERE ********************/
 #footer-section{
   background-color: #393f4d;
-  color: white;
-  height: 170px;
-  position: relative;
+  padding: 15px 0;
+  border-top: 2px solid #feda6a;
 }
 
-/* This code has displayed three sections  */
-#footer-section .main-content{
-  display: flex;
-  height: 140px;
-}
-
-#footer-section .main-content .footer-logo-and-project-declaration-text {
-  flex: 1;
-  border: 2px solid black;
-}
-
-#footer-section  .main-content  .footer-navigation-links{
-  flex: 1;
-  border: 2px solid black;
-}
-
-#footer-section  .main-content .footer-social-media-links{
-  flex: 1;
-  border: 2px solid black;
-}
-/* Till here */
-
-.footer-logo-and-project-declaration-text h1{
-  padding-top: 20px;
-  padding-left: 90px;
+#footer-section ul{
+  font-family: 'Merriweather', serif;
+  float: left;
+  padding: 0;
+  color: #d4d4dc;
+  width: 23%;
+  margin: 2%;
   text-align: center;
+  margin-left: 88px;
+}
+
+#footer-section li{
+  font-family: 'Merriweather', serif;
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+
+#footer-section ul li a{
+  font-family: 'Merriweather', serif;
+  color: #d4d4dc;
+  text-decoration: none;
+}
+
+#footer-section h1{
+  font-size: 2.308em;
+  color: #d4d4dc;
+  font-family: 'Lora', serif;
+  margin-left: 120px;
+  position: relative;
+  top: 27px;
+
 
 }
 
-/* Single Word Highlight */
-.footer-logo-and-project-declaration-text .churchill-text-highlight{
+#footer-section .footer-churchill-highlight{
   color: #feda6a;
   font-weight: lighter;
-}
-
-.footer-logo-and-project-declaration-text p{
-  line-height: 18px;
-  padding-left: 22px;
-  padding-top: 20px;
-  text-align: center;
 }
 
 #footer-section .footer-copyright-section{
@@ -432,6 +458,54 @@ a.common-btn-styling{
   font-weight: bold;
 
 }
+
+#footer-section .production-declaration{
+  font-family: 'Merriweather', serif;
+  position: relative;
+  top: 24px;
+}
+
+
+#footer-section .social-media-icons{
+  position: relative;
+  float: right;
+  bottom: 20px;
+  width: 24%;
+  left: 5px;
+}
+
+#footer-section .social-media-icons:hover{
+  color: white;
+
+}
+
+#footer-section .social-media-icons .facebook{
+  margin-right: 20px;
+}
+
+#footer-section .social-media-icons .instagram{
+  margin-right: 20px;
+}
+#footer-section .social-media-icons .twitter{
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+/***************** FOOTER SECTION ENDS HERE ********************/
+
+
+
+
+
+
+
+
+
 /******************* CSS CODE FOR INDEX HOMEPAGE ENDS HERE*********************/
 
 
@@ -449,6 +523,15 @@ a.common-btn-styling{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+}
+
+ .index-logo{
+  width: 150px;
+  height: 150px;
+  float: left;
+  position: relative;
+  margin: 10px 15px 15px 10px;
 
 }
 
@@ -473,6 +556,14 @@ a.common-btn-styling{
   font-size: 1.538em;
   line-height: 2em;
   padding: 10px;
+}
+
+#header-desc nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
 }
 
 #header-desc nav ul{
@@ -544,7 +635,7 @@ a.common-btn-styling{
 }
 
 
-/***************** MAIN BUILDING SECTION STARTS HERE ************************/
+/****** MAIN BUILDING SECTION STARTS HERE (PART OF DESCRIPTION) *******/
 
 /* This code sets the background image of the main building section */
 #main-building-section{
@@ -555,14 +646,9 @@ background-attachment: fixed;
 }
 
 /**************** Box 1 Content Starts Here************/
-.mainbox1{
-  width: 100%;
-  height: 400px;
-  background-color: grey;
 
-}
 
-.box1{
+#main-building-section .box1{
 
     width: 50%;
     text-align: center;
@@ -570,7 +656,7 @@ background-attachment: fixed;
     vertical-align: top;
 }
 
-.box1 p{
+#main-building-section .box1 p{
   color: #d4d4dc;
   font-size: 1.154em;
   text-align: center;
@@ -583,8 +669,7 @@ background-attachment: fixed;
   bottom: 65px;
 }
 
-.box1 img{
-  width: 100%;
+#main-building-section .box1 img{
   margin-top: 91px;
 }
 /**************** Box 1 Content Ends Here************/
@@ -592,12 +677,13 @@ background-attachment: fixed;
 
 
 /**************** Box 2 Content Starts Here************/
-.box2{
+#main-building-section .box2{
+  text-align: center;
   width: 49.5%;
   display: inline-block;
 }
 
-.box2 p{
+#main-building-section .box2 p{
 color: #d4d4dc;
 font-size: 1.154em;
 text-align: center;
@@ -609,23 +695,18 @@ margin: 40px;
 margin-top: 90px;
 }
 
-.box2 h1{
+#main-building-section .box2 h1{
   color: #d4d4dc;
   text-align: center;
   position: relative;
   top: 91px;
 }
 
-.box2 .main-building-text-highlight{
+#main-building-section .box2 .main-building-text-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
 
-.box2 img{
-  width: 100%;
-  position: relative;
-
-}
 /**************** Box 2 Content Ends Here************/
 
 
@@ -692,7 +773,6 @@ background-attachment: fixed;
 }
 
 #stylistic-analysis-section .box1 img{
-  width: 100%;
   margin-top: 91px;
 }
 /**************** Box 1 Content Ends Here************/
@@ -701,6 +781,7 @@ background-attachment: fixed;
 
 /**************** Box 2 Content Starts Here************/
 #stylistic-analysis-section .box2{
+  text-align: center;
   width: 49.5%;
   display: inline-block;
 }
@@ -729,11 +810,6 @@ margin-top: 90px;
   font-weight: lighter;
 }
 
-#stylistic-analysis-section .box2 img{
-  width: 100%;
-  position: relative;
-  left: 10px;
-}
 /**************** Box 2 Content Ends Here************/
 
 /************************* CSS CODE FOR DESCRIPTION HOMEPAGE ENDS HERE *************************/
@@ -871,11 +947,11 @@ margin-top: 90px;
   padding: 20px;
   margin: 40px;
   position: relative;
-  bottom: 28px;
+  bottom: 22px;
 }
 
 #statementOfSig-image-section .box1 img{
-  width: 100%;
+  /* width: 100%; */
   margin-top: 91px;
 }
 /**************** Box 1 Content Ends Here************/
@@ -884,6 +960,7 @@ margin-top: 90px;
 
 /**************** Box 2 Content Starts Here************/
 #statementOfSig-image-section .box2{
+  text-align: center;
   width: 49.5%;
   display: inline-block;
 }
@@ -913,9 +990,9 @@ margin-top: 90px;
 }
 
 #statementOfSig-image-section .box2 img{
-  width: 100%;
   position: relative;
-  left: 10px;
+  margin-top: 37px;
+  bottom: 20px;
 }
 /************************* CSS CODE FOR STATEMENT OF SIGNIFICANCE HOMEPAGE ENDS HERE *************************/
 
@@ -1056,7 +1133,6 @@ margin-top: 90px;
 }
 
 #history-image-section .box1 img{
-  width: 100%;
   margin-top: 91px;
 }
 /**************** Box 1 Content Ends Here************/
@@ -1065,6 +1141,7 @@ margin-top: 90px;
 
 /**************** Box 2 Content Starts Here************/
 #history-image-section .box2{
+  text-align: center;
   width: 49.5%;
   display: inline-block;
 }
@@ -1093,11 +1170,9 @@ margin-top: 90px;
   font-weight: lighter;
 }
 
-#history-image-section .box2 img{
-  width: 100%;
+/* #history-image-section .box2 img{
   position: relative;
-  left: 10px;
-}
+} */
 
 
 
@@ -1110,7 +1185,7 @@ margin-top: 90px;
   width: 100%;
   height: 100vh;
   min-height: 100%;
-  background-image: url('../images/history-header-image.jpg');
+  background-image: url('../images/boyd-header-img.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1207,7 +1282,7 @@ margin-top: 90px;
 
 
 #boyd-image-section{
-  background-image: url('../images/main-building-section-desc.jpg');
+  background-image: url('../images/content-cards-background-img.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1235,7 +1310,6 @@ margin-top: 90px;
 }
 
 #boyd-image-section .box1 img{
-  width: 100%;
   margin-top: 91px;
 }
 /**************** Box 1 Content Ends Here************/
@@ -1244,6 +1318,7 @@ margin-top: 90px;
 
 /**************** Box 2 Content Starts Here************/
 #boyd-image-section .box2{
+  text-align: center;
   width: 49.5%;
   display: inline-block;
 }
@@ -1273,12 +1348,133 @@ margin-top: 90px;
 }
 
 #boyd-image-section .box2 img{
-  width: 100%;
   position: relative;
-  left: 10px;
+
 }
 
 
+/* ***************** */
+
+
+
+#boyd-text-section h1{
+  color: #d4d4dc;
+  text-align: center;
+  margin-top: 25px;
+  line-height: 1.8em;
+}
+
+#boyd-text-section p{
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  padding: 30px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+}
+
+/* This code is for the text highlight that has been set on the introduction heading (h1) */
+#boyd-text-section h1 .Boyd-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#boyd-text-section h1 .pool-area-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#boyd-text-section ul{
+  text-align: center;
+  line-height: 2.5em;
+  color: #d4d4dc;
+  list-style: decimal-leading-zero;
+}
+
+
+
+/* *************************** */
+#boyd-section-box-2{
+background-image: url('../images/main-building-section-desc.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+#boyd-section-box-2 .box1{
+    text-align: center;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#boyd-section-box-2 .box1 p{
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  bottom: 19px;
+}
+
+#boyd-section-box-2 .box1 img{
+  margin-top: 91px;
+}
+/**************** Box 1 Content Ends Here************/
+
+
+
+/**************** Box 2 Content Starts Here************/
+#boyd-section-box-2 .box2{
+  text-align: center;
+  width: 49.5%;
+  display: inline-block;
+}
+
+#boyd-section-box-2 .box2 p{
+color: #d4d4dc;
+font-size: 1.154em;
+text-align: center;
+padding-bottom: 14px;
+line-height: 2em;
+letter-spacing: 0.5px;
+padding: 30px;
+margin: 40px;
+margin-top: 90px;
+}
+
+#boyd-section-box-2 .box2 h1{
+  color: #d4d4dc;
+  text-align: center;
+  position: relative;
+  top: 91px;
+}
+
+#boyd-section-box-2 .box2 .analysis-section-text-highlight{
+  color: #feda6a;
+  font-weight: lighter;
+}
+
+#boyd-section-box-2 .box2 img{
+  position: relative;
+}
+
+/* *********************** */
+
+/* MEDIA QUERIES */
+/* @media(max-width: 768px){
+  #header-desc nav, #header-desc .index-logo, #header-desc nav ul li{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+} */
 
 
 
