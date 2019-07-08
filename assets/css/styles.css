@@ -21,7 +21,7 @@ h1{
   cursor: pointer;
   color: #ffff;
   border-radius: 5px;
-  transition: 0.6s;
+  /* transition: 0.2s; */
   background-color: #393f4d;
   display: inline-block;
   text-decoration: none;
@@ -74,7 +74,6 @@ I have applied various styles to the navigation, including before and after hove
 }
 
 #header .hero-image-content h1{
-  margin-top: 50px;
   font-size: 50px;
   margin-bottom: 10px;
   line-height: 1.5;
@@ -90,34 +89,58 @@ I have applied various styles to the navigation, including before and after hove
 
 .hero-image-content-button{
   text-align: center;
-  position: relative;
-  top: 33px;
+  /* position: relative;
+  top: 33px; */
 }
+
 
 /* I have applied styling to the anchor tag, which is applied on the header image button */
 a.common-btn-styling{
   font-size: 1.077em;
   text-decoration: none;
   display: inline-block;
+  transition: 0.2s ease-in-out;
 
+}
+
+a.common-btn-styling:hover{
+  background-color: #d4d4dc;
 }
 
 #header nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* This code is for the label and toggle,
+which enables the hamburger nav menu */
+#header nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  display: none;
+  width: 26px;
+  float: right;
+
+}
+
+#toggle{
+  display: none;
 }
 
 #header nav ul{
-  display: flex;
-  transition: 0.6s;
-
+  margin-top: 63px;
 }
 
 #header nav ul li{
-  list-style: none;
+  /* list-style: none; */
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #header nav ul li a{
@@ -127,10 +150,8 @@ a.common-btn-styling{
   position: relative;
   padding: 1rem 0;
   margin: 0 3rem;
-
+  clear: right;
 }
-
-/********  single text highlight styles applied ************/
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
 #header nav .nav-text-highlight{
@@ -255,7 +276,7 @@ a.common-btn-styling{
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 /* Description Content Card */
@@ -356,44 +377,72 @@ a.common-btn-styling{
 
 
 /**************** ROBIN BOYD SECTION STARTS HERE ********************/
-#boyd-info-section .boyd-section-box-1{
+#boyd-info-section{
   background-image: url('../images/robin-boyd-section-img.jpg');
   background-attachment: fixed;
-  /* background-position: center; */
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
 }
 
-/* This is for the small robin boyd image on the boyd section */
-#boyd-info-section .box1 img{
-  position: relative;
-  left: 117px;
+#boyd-info-section .box1{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
 
+
+#boyd-info-section .box2{
+  text-align: center;
+  width: 49.5%;
+  display: inline-block;
+}
+
+#boyd-info-section h1 .boyd-header-highlight{
+  color: #feda6a;
+  font-weight: lighter;
 }
 
 #boyd-info-section .box2 h1{
-  /* color: #d4d4dc;
-  text-align: center;
-  position: relative;
-  top: 91px; */
+  color: #d4d4dc;
+}
+
+#boyd-info-section .box2 .boyd-header{
+  margin-top: 50px;
 }
 
 #boyd-info-section .box2 p{
-    background-color: grey;
-    /* color: #d4d4dc;
-    font-size: 1.154em;
-    text-align: center;
-    padding-bottom: 14px;
-    line-height: 2em;
-    letter-spacing: 0.5px;
-    padding: 30px;
-    margin: 40px;
-    margin-top: 90px;
+  color: #d4d4dc;
+  font-size: 1.154em;
+  text-align: center;
+  padding-bottom: 14px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  padding: 30px;
+  margin: 40px;
+  margin-top: 90px;
+  }
+
+  /* #boyd-info-section .box2 .boyd-header{
     position: relative;
-    top: 81px;*/
-}
+    top: 70px;
+  } */
+
+  #boyd-info-section .box2 .boyd-section-button{
+    position: relative;
+    bottom: 71px;
+  }
+
+  /* #boyd-info-section .boyd-section-button{
+    text-align: right;
+     position: relative;
+    right: 127px;
+    bottom: 80px;
+  } */
+
+
 /**************** ROBIN BOYD SECTION ENDS HERE ********************/
 
 
@@ -466,43 +515,8 @@ a.common-btn-styling{
 }
 
 
-#footer-section .social-media-icons{
-  position: relative;
-  float: right;
-  bottom: 20px;
-  width: 24%;
-  left: 5px;
-}
-
-#footer-section .social-media-icons:hover{
-  color: white;
-
-}
-
-#footer-section .social-media-icons .facebook{
-  margin-right: 20px;
-}
-
-#footer-section .social-media-icons .instagram{
-  margin-right: 20px;
-}
-#footer-section .social-media-icons .twitter{
-  margin-right: 20px;
-}
-
-
-
-
-
-
 
 /***************** FOOTER SECTION ENDS HERE ********************/
-
-
-
-
-
-
 
 
 
@@ -856,6 +870,14 @@ margin-top: 90px;
   padding: 10px;
 }
 
+#header-statement-Of-Sig nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
 #header-statement-Of-Sig nav ul{
   display: flex;
   transition: 0.6s;
@@ -1038,6 +1060,14 @@ margin-top: 90px;
   padding: 10px;
 }
 
+#header-history nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
 #header-history nav ul{
   display: flex;
   transition: 0.6s;
@@ -1058,7 +1088,6 @@ margin-top: 90px;
 
 }
 
-/********  single text highlight styles applied ************/
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
 #header-history nav .nav-text-highlight{
@@ -1215,6 +1244,14 @@ margin-top: 90px;
   padding: 10px;
 }
 
+#header-boyd nav{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
 #header-boyd nav ul{
   display: flex;
   transition: 0.6s;
@@ -1235,7 +1272,6 @@ margin-top: 90px;
 
 }
 
-/********  single text highlight styles applied ************/
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
 #header-boyd nav .nav-text-highlight{
@@ -1467,20 +1503,115 @@ margin-top: 90px;
 
 /* *********************** */
 
-/* MEDIA QUERIES */
-/* @media(max-width: 768px){
-  #header-desc nav, #header-desc .index-logo, #header-desc nav ul li{
-    float: none;
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) { /* STYLES GO HERE */
+  /* For mobile phones: */
+  #content-cards li {
+    width: 80%;
+  }
+
+  #boyd-info-section .box2{
     text-align: center;
+    display: inline-block;
     width: 100%;
   }
-} */
+
+  #boyd-info-section .box1 img{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  #boyd-info-section .box2 p{
+    position: relative;
+    bottom: 50px;
+  }
+
+  #boyd-info-section h1 .boyd-header-highlight{
+    color: #feda6a;
+    font-weight: lighter;
+  }
+
+  #boyd-info-section .boyd-section-button{
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+  }
+
+  #header{
+    height: 100vh;
+    min-height: 100%;
+    background-image: url(../images/churchill-hero-img-iphone-version.png);
+    /* background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+  }
+
+
+   #header nav, #header nav ul li{
+      float: none;
+      text-align: center;
+      width: 100%;
+  }
+
+   #header nav ul{
+     position: relative;
+     bottom: 154px;
+     display: none;
+
+   }
+
+   #header nav label{
+     display: block;
+     text-align: center;
+     cursor: pointer;
+     margin-left: 35px;
+   }
+
+   #header nav ul li a{
+     display: block;
+     margin: 0;
+   }
+
+   #toggle:checked + nav ul{
+     display: block;
+   }
 
 
 
+  .index-logo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 30px;
+    text-align: left;
+  }
 
+  #newsletter-section{
+    padding-top: 22px;
+    text-align: center;
+  }
 
+  #newsletter-section .form{
+    padding-top: 17px;
+  }
 
+  #footer-section ul{
+    width: 48%;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  #footer-section h1{
+    width: 30%;
+    text-align: center;
+  }
+
+}
 
 
 

@@ -10,8 +10,8 @@
     <meta name="keywords" content="Australian Architect, Teacher, Writer, and Social Commentator">
     <meta name="author" content="Sahil Samani">
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/nav-hover-effects.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=388" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/css/nav-hover-effects.css" type="text/css"> -->
 
 
 
@@ -23,16 +23,19 @@
     <header id="header">
       <div class="wrapper">
         <nav>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
           <a href="index.html"><img src="./assets/images/index-logo.png" alt="Hero-Content-Logo" class="index-logo"/></a>
           <ul>
-            <li><a href="#content-cards"><span class="nav-text-highlight">Description</span></a></li>
+            <li><a href="desc.html"><span class="nav-text-highlight">Description</span></a></li>
             <li><a href="statementOfSig.html">Statement of Significance</a></li>
-            <li><a href="#content-cards">History</a></li>
+            <li><a href="history.html">History</a></li>
             <li><a href="boyd.html">Robin Boyd</a></li>
           </ul>
         </nav>
       </div>
 
+      <div class="wrapper">
         <div class="hero-image-content">
           <h1><span class="hero-content-highlight">Churchill</span> House</h1>
           <p>Was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70, and construction was completed in 1971.</p>
@@ -43,8 +46,10 @@
           <a href="#intro-section" class="common-btn-styling intro-btn">Get Started!</a>
 
         </div>
+      </div>
 
     </header>
+
 
 
     <!--- NEWSLETTER SECTION STARTS HERE --->
@@ -59,6 +64,7 @@
         </div>
       </div>
     </section>
+
 
     <!--- INTRODUCTION SECTION STARTS HERE --->
     <section id="intro-section">
@@ -111,21 +117,37 @@
         <section id="boyd-info-section">
           <div class="boyd-section-box-1">
             <div class="box1">
-              <!-- <div class="overlap-box1"></div> -->
               <img src="./assets/images/robin-boyd-img.png" alt="">
-              <!-- <p>Box 1 content</p> -->
+
             </div>
 
-            <!-- <div class="box2">
-              <h1><span class="robin-text-highlight">Robin</span> Boyd</h1>
-              <p>Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic.
-                In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading...
+
+            <div class="box2">
+              <h1 class="boyd-header"><span class="boyd-header-highlight">Robin</span> Boyd</h1>
+              <p>Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and
+                 appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed...
               </p>
-            </div> -->
+
+              <div class="boyd-section-button">
+
+                <a href="boyd.html" class="common-btn-styling intro-btn">Learn More!</a>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="boyd-section-button">
+
+            <a href="boyd.html" class="common-btn-styling intro-btn">Learn More!</a>
+
+          </div> -->
 
 
-        </div>
+
+
         </section>
+
+
 
 
         <!-- FOOTER SECTION STARTS HERE -->
@@ -150,19 +172,10 @@
 
 
             <ul>
-              <li>Connect With Us</li>
+              <li>&copy; Churchill House | Designed and Coded By Sahil Samani, 2019</li>
             </ul>
 
-            <div class="social-media-icons">
-
-                  <img src="./assets/images/facebook-icon(2).png" alt="" class="facebook">
-
-                  <img src="./assets/images/insta-icon(2).png" alt="" class="instagram">
-
-                  <img src="./assets/images/twitter-icon(7).png" alt="" class="twitter">
-
-
-            </div>
+            <!--  -->
 
             <!-- <div class="footer-copyright-section">
             &copy; Churchill House | Designed and Coded By Sahil Samani, 2019
@@ -170,8 +183,6 @@
 
           </div>
         </footer>
-
-
 
 
   </body>
