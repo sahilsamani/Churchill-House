@@ -88,6 +88,8 @@ I have applied various styles to the navigation, including before and after hove
 }
 
 .hero-image-content-button{
+  position: relative;
+  bottom: 31px;
   text-align: center;
   /* position: relative;
   top: 33px; */
@@ -378,12 +380,12 @@ which enables the hamburger nav menu */
 
 /**************** ROBIN BOYD SECTION STARTS HERE ********************/
 #boyd-info-section{
-  background-image: url('../images/robin-boyd-section-img.jpg');
+  background: url('../images/robin-boyd-section-img_old.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: auto;
 }
 
 #boyd-info-section .box1{
@@ -528,7 +530,7 @@ which enables the hamburger nav menu */
 /************************* CSS CODE FOR DESCRIPTION HOMEPAGE STARTS HERE *************************/
 
 /***************** HEADER SECTION STARTS HERE ************************/
-#header-desc .header-image{
+#header-desc{
   width: 100%;
   height: 100vh;
   min-height: 100%;
@@ -572,22 +574,55 @@ which enables the hamburger nav menu */
   padding: 10px;
 }
 
-#header-desc nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ********************* */
+
+
+#header nav{
   font-size: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* This code is for the label and toggle,
+which enables the hamburger nav menu */
+
+
+
+
+
+/* *************************8 */
+#header-desc nav{
+  font-size: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 10px;
 }
 
 #header-desc nav ul{
-  display: flex;
-  transition: 0.6s;
+  margin-top: 63px;
+}
+
+#header-desc nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
 
 }
 
+#toggle{
+  display: none;
+}
+
 #header-desc nav ul li{
-  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #header-desc nav ul li a{
@@ -597,6 +632,7 @@ which enables the hamburger nav menu */
   position: relative;
   padding: 1rem 0;
   margin: 0 3rem;
+  clear: right;
 
 }
 
@@ -1059,23 +1095,44 @@ margin-top: 90px;
   line-height: 2em;
   padding: 10px;
 }
+/* ***************** */
+
+
+
+
+/* ********** */
 
 #header-history nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 10px;
 }
 
 #header-history nav ul{
-  display: flex;
-  transition: 0.6s;
+  margin-top: 63px;
 
 }
 
+#header-desc nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
+
+}
+
+#toggle{
+  display: none;
+}
+
 #header-history nav ul li{
-  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #header-history nav ul li a{
@@ -1085,6 +1142,7 @@ margin-top: 90px;
   position: relative;
   padding: 1rem 0;
   margin: 0 3rem;
+  clear: right;
 
 }
 
@@ -1542,37 +1600,128 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   }
 
   #header{
-    height: 100vh;
+    height: auto;
     min-height: 100%;
-    background-image: url(../images/churchill-hero-img-iphone-version.png);
-    /* background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
+    background: url(../images/churchill-hero-img-iphone-version.png);
+    background-attachment: fixed;
+  }
+
+  #header-desc{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/description-header-image-mobile-version.jpg);
+    background-position: center;
+  }
+
+  #header-history .header-image{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/history-header-image-mobile-version.jpg);
+    background-position: center;
+  }
+
+  #header-statement-Of-Sig .header-image{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/statement-Of-Sig-mobile-version.jpg);
+    background-position: center;
+  }
+
+  #header-boyd .header-image{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/boyd-header-img-mobile-version.jpg);
+    background-position: center;
   }
 
 
-   #header nav, #header nav ul li{
+  #content-cards .card-image-placement{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    background-position: center;
+  }
+
+  #boyd-info-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/robin-boyd-section-img-mobile-version.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+  }
+
+  /* Description Page */
+  #main-building-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    background-position: center;
+
+  }
+
+  #stylistic-analysis-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/content-cards-background-img-mobile-version.jpg);
+    background-position: center;
+
+  }
+
+  #history-image-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    background-position: center;
+  }
+
+  #statementOfSig-image-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/content-cards-background-img-mobile-version.jpg);
+    background-position: center;
+
+  }
+
+  #boyd-image-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/content-cards-background-img-mobile-version.jpg);
+    background-position: right;
+
+  }
+
+  #boyd-section-box-2{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    background-position: right;
+  }
+
+/* hamburger navigation menu starts here */
+   #header nav, #header nav ul li, #header-desc nav, #header-desc nav ul li{
       float: none;
       text-align: center;
       width: 100%;
   }
 
-   #header nav ul{
+   #header nav ul, #header-desc nav ul{
      position: relative;
      bottom: 154px;
      display: none;
 
    }
 
-   #header nav label{
+   #header nav label, #header-desc nav label{
      display: block;
      text-align: center;
      cursor: pointer;
      margin-left: 35px;
    }
 
-   #header nav ul li a{
+   #header nav ul li a, #header-desc nav ul li a{
      display: block;
      margin: 0;
    }
@@ -1580,6 +1729,7 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
    #toggle:checked + nav ul{
      display: block;
    }
+   /* hamburger navigation menu ends here */
 
 
 
@@ -1610,6 +1760,88 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     width: 30%;
     text-align: center;
   }
+
+  #main-building-section .box2{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #main-building-section .box1{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #stylistic-analysis-section .box1{
+    width: 100%;
+  }
+
+  #stylistic-analysis-section .box2{
+    position: relative;
+    bottom: 52px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #history-image-section .box1 {
+    width: 100%;
+  }
+
+  #history-image-section .box2{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+    #statementOfSig-image-section .box1{
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+
+    #statementOfSig-image-section .box2{
+      position: relative;
+      bottom: 50px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    #boyd-image-section .box1{
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    #boyd-image-section .box2{
+      position: relative;
+      bottom: 50px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    #boyd-section-box-2 .box1{
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    #boyd-section-box-2 .box2{
+      position: relative;
+      bottom: 50px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
 
 }
 
