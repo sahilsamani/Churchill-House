@@ -54,7 +54,7 @@ I have applied various styles to the navigation, including before and after hove
 /*This code is for the hero image, which is displayed on the homepage*/
 #header{
   width: 100%;
-  height: 100vh;
+  height: auto;
   min-height: 100%;
   background-image: url('../images/churchill-hero-img.jpg');
   background-attachment: fixed;
@@ -84,7 +84,7 @@ I have applied various styles to the navigation, including before and after hove
   font-family: 'Merriweather', serif;
   font-size: 1.538em;
   line-height: 2em;
-  padding: 10px;
+  padding: 30px;
 }
 
 .hero-image-content-button{
@@ -117,9 +117,11 @@ a.common-btn-styling:hover{
   margin-top: 10px;
 }
 
+
+
 /* This code is for the label and toggle,
 which enables the hamburger nav menu */
-#header nav label{
+/* #header nav label{
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -132,14 +134,16 @@ which enables the hamburger nav menu */
 
 #toggle{
   display: none;
-}
+} */
+
+
+
 
 #header nav ul{
   margin-top: 63px;
 }
 
 #header nav ul li{
-  /* list-style: none; */
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -221,8 +225,6 @@ which enables the hamburger nav menu */
   color: #393f4d;
 }
 /**************** NEWSLETTER SECTION ENDS HERE *******************/
-
-
 
 
 /************** INTRODUCTION SECTION STARTS HERE  *****************/
@@ -376,8 +378,6 @@ which enables the hamburger nav menu */
 /************** CONTENT CARD SECTION ENDS HERE ***************/
 
 
-
-
 /**************** ROBIN BOYD SECTION STARTS HERE ********************/
 #boyd-info-section{
   background: url('../images/robin-boyd-section-img_old.jpg');
@@ -436,15 +436,6 @@ which enables the hamburger nav menu */
     position: relative;
     bottom: 71px;
   }
-
-  /* #boyd-info-section .boyd-section-button{
-    text-align: right;
-     position: relative;
-    right: 127px;
-    bottom: 80px;
-  } */
-
-
 /**************** ROBIN BOYD SECTION ENDS HERE ********************/
 
 
@@ -486,7 +477,6 @@ which enables the hamburger nav menu */
   position: relative;
   top: 27px;
 
-
 }
 
 #footer-section .footer-churchill-highlight{
@@ -515,14 +505,11 @@ which enables the hamburger nav menu */
   position: relative;
   top: 24px;
 }
-
-
-
 /***************** FOOTER SECTION ENDS HERE ********************/
 
-
-
 /******************* CSS CODE FOR INDEX HOMEPAGE ENDS HERE*********************/
+
+
 
 
 
@@ -532,7 +519,7 @@ which enables the hamburger nav menu */
 /***************** HEADER SECTION STARTS HERE ************************/
 #header-desc{
   width: 100%;
-  height: 100vh;
+  height: auto;
   min-height: 100%;
   background-image: url('../images/description-header-image.jpg');
   background-attachment: fixed;
@@ -571,7 +558,7 @@ which enables the hamburger nav menu */
   font-family: 'Merriweather', serif;
   font-size: 1.538em;
   line-height: 2em;
-  padding: 10px;
+  padding: 30px;
 }
 
 /* ********************* */
@@ -636,8 +623,6 @@ which enables the hamburger nav menu */
 
 }
 
-/********  single text highlight styles applied ************/
-
 /* This code is for the text highlight that has been set on the "description" nav link.*/
 #header-desc nav .nav-text-highlight{
   color: #feda6a;
@@ -649,7 +634,6 @@ which enables the hamburger nav menu */
   color: #feda6a;
   font-weight: lighter;
 }
-
 /***************** HEADER SECTION ENDS HERE ************************/
 
 
@@ -696,8 +680,6 @@ background-attachment: fixed;
 }
 
 /**************** Box 1 Content Starts Here************/
-
-
 #main-building-section .box1{
 
     width: 50%;
@@ -756,7 +738,6 @@ margin-top: 90px;
   color: #feda6a;
   font-weight: lighter;
 }
-
 /**************** Box 2 Content Ends Here************/
 
 
@@ -874,7 +855,7 @@ margin-top: 90px;
 /********HEADER SECTION OF STATEMENT OF SIGNIFICANCE  ********/
 #header-statement-Of-Sig .header-image{
   width: 100%;
-  height: 100vh;
+  height: auto;
   min-height: 100%;
   background-image: url('../images/statement-Of-Sig.jpg');
   background-attachment: fixed;
@@ -903,7 +884,7 @@ margin-top: 90px;
   font-family: 'Merriweather', serif;
   font-size: 20px;
   line-height: 2em;
-  padding: 10px;
+  padding: 30px;
 }
 
 #header-statement-Of-Sig nav{
@@ -934,7 +915,6 @@ margin-top: 90px;
 
 }
 
-/********  single text highlight styles applied ************/
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
 #header-statement-Of-Sig nav .nav-text-highlight{
@@ -1059,12 +1039,13 @@ margin-top: 90px;
 
 
 
+
 /************************* CSS CODE FOR HISTORY HOMEPAGE STARTS HERE *************************/
 
 /****************** HEADER SECTION **************/
 #header-history .header-image{
   width: 100%;
-  height: 100vh;
+  height: auto;
   min-height: 100%;
   background-image: url('../images/history-header-image.jpg');
   background-attachment: fixed;
@@ -1093,7 +1074,7 @@ margin-top: 90px;
   font-family: 'Merriweather', serif;
   font-size: 1.538em;
   line-height: 2em;
-  padding: 10px;
+  padding: 30px;
 }
 /* ***************** */
 
@@ -1115,6 +1096,7 @@ margin-top: 90px;
 
 }
 
+/* HAMBURGER MENU  */
 #header-desc nav label{
   margin: 0 40px 0 0;
   font-size: 26px;
@@ -1257,10 +1239,6 @@ margin-top: 90px;
   font-weight: lighter;
 }
 
-/* #history-image-section .box2 img{
-  position: relative;
-} */
-
 
 
 
@@ -1270,7 +1248,7 @@ margin-top: 90px;
 /****************** HEADER SECTION **************/
 #header-boyd .header-image{
   width: 100%;
-  height: 100vh;
+  height: auto;
   min-height: 100%;
   background-image: url('../images/boyd-header-img.jpg');
   background-attachment: fixed;
@@ -1299,7 +1277,7 @@ margin-top: 90px;
   font-family: 'Merriweather', serif;
   font-size: 1.538em;
   line-height: 2em;
-  padding: 10px;
+  padding: 30px;
 }
 
 #header-boyd nav{
@@ -1447,10 +1425,6 @@ margin-top: 90px;
 }
 
 
-/* ***************** */
-
-
-
 #boyd-text-section h1{
   color: #d4d4dc;
   text-align: center;
@@ -1486,9 +1460,7 @@ margin-top: 90px;
   list-style: decimal-leading-zero;
 }
 
-
-
-/* *************************** */
+/* BOYD IMAGE SECTION */
 #boyd-section-box-2{
 background-image: url('../images/main-building-section-desc.jpg');
 background-size: cover;
@@ -1559,13 +1531,12 @@ margin-top: 90px;
   position: relative;
 }
 
-/* *********************** */
-
+/*********** MEDIA QUERY FOR IPHONE 6, 7, 8 PLUS ******************* */
 
 @media only screen
 and (min-device-width : 414px)
 and (max-device-width : 736px) { /* STYLES GO HERE */
-  /* For mobile phones: */
+  /* For IPhone 6,7,8 Plus: */
   #content-cards li {
     width: 80%;
   }
@@ -1659,6 +1630,9 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     min-height: 100%;
     background: url(../images/main-building-section-desc-mobile-version.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 
   }
 
@@ -1701,7 +1675,7 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   }
 
 /* hamburger navigation menu starts here */
-   #header nav, #header nav ul li, #header-desc nav, #header-desc nav ul li{
+   /* #header nav, #header nav ul li, #header-desc nav, #header-desc nav ul li{
       float: none;
       text-align: center;
       width: 100%;
@@ -1710,7 +1684,7 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
    #header nav ul, #header-desc nav ul{
      position: relative;
      bottom: 154px;
-     display: none;
+
 
    }
 
@@ -1728,7 +1702,7 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
 
    #toggle:checked + nav ul{
      display: block;
-   }
+   } */
    /* hamburger navigation menu ends here */
 
 
@@ -1846,19 +1820,357 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
 }
 
 
+/* MEDIA QUERY FOR IPHONE 6, 6s, 7, 8 */
 
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px){
 
-
-/* MEDIA QUERIES */
-/* @media screen and (max-width: 768px) {
-  .wrapper{
-    width: 98%;
+  /* INDEX PAGE HERE */
+  #header .hero-image-content h1{
+    padding: 10px;
   }
 
-    #newsletter-section {
-          float: none;
-          clear: left;
-          width: 100%;
-      }
+  #header p{
+    margin: 20px;
+  }
 
-  } */
+  #newsletter-section h1{
+    padding: 12px;
+  }
+
+  #content-cards li{
+    width: 80%;
+  }
+
+  #boyd-info-section .box1 img{
+
+  }
+
+  #boyd-info-section .box2 .boyd-header{
+    margin-top: 0px;
+  }
+
+  #boyd-info-section .box2{
+    width: 100%;
+  }
+
+  #boyd-info-section .box2 p{
+    position: relative;
+    bottom: 50px;
+    color: #d4d4dc;
+    font-size: 1.154em;
+    text-align: center;
+    padding-bottom: 14px;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    padding: 30px;
+    margin: 40px;
+    margin-top: 50px;
+  }
+
+  #boyd-info-section .box2 .boyd-section-button{
+    position: relative;
+    bottom: 104px;
+  }
+  /* INDEX PAGE FINISHES HERE */
+
+
+  /* DESCRIPTION PAGE HERE */
+  #main-building-section .box2{
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+  }
+
+  #main-building-section .box1{
+    width: 100%;
+  }
+  /* DESCRIPTION PAGE FINISHES HERE */
+
+
+
+  /* STATEMENT OF SIGIFICANCE PAGE HERE */
+  #statementOfSig-image-section .box1{
+    width: 100%;
+  }
+
+  #statementOfSig-image-section .box2{
+    width: 100%;
+  }
+
+  #statementOfSig-image-section .box2 img{
+    position: relative;
+    bottom: 40px;
+  }
+  /* STATEMENT OF SIGIFICANCE PAGE FINISHES HERE */
+
+
+
+  /* HISTORY PAGE HERE */
+  #history-image-section .box1{
+    width: 100%;
+  }
+
+  #history-image-section .box2{
+    width: 100%;
+  }
+
+  #history-image-section .box2{
+    position: relative;
+    bottom: 40px;
+  }
+  /* HISTORY PAGE FINISHES HERE */
+
+
+
+  /* ROBIN BOYD PAGE HERE */
+  #boyd-image-section .box1{
+    width: 100%;
+  }
+
+  #boyd-image-section .box2{
+    width: 100%;
+  }
+
+  #boyd-image-section .box2{
+    position: relative;
+    bottom: 40px;
+  }
+
+  #boyd-section-box-2 .box1{
+    width: 100%;
+  }
+
+  #boyd-section-box-2 .box2{
+    width: 100%;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/***************** For IPad Mini and IPad Air ----------- ************/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) { /* STYLES GO HERE */
+  /* For IPad Mini and IPad Air ************/
+
+/* INDEX PAGE */
+    #header{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/churchill-hero-img-iphone-version.png);
+    background-attachment: fixed;
+  }
+
+  #header p{
+    padding: 30px;
+  }
+
+  #newsletter-section .form{
+    margin-top: 15px;
+  }
+
+  #content-cards li{
+    width: 35%;
+  }
+
+  #footer-section ul{
+    width: 50%;
+    /* margin: 0 auto;
+    text-align: center; */
+  }
+
+  #footer-section h1{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  #content-cards .card-image-placement{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  #boyd-info-section{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/robin-boyd-section-img-mobile-version.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+/* INDEX PAGE FINISHES HERE*/
+
+
+
+
+
+
+
+/* DESCRIPTION PAGE HERE*/
+    #header-desc{
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      background-size: cover;
+      background: url(../images/description-header-image.jpg);
+      border-bottom: 2px solid #feda6a;
+  }
+
+    #header-desc p{
+      padding: 30px;
+    }
+
+    #main-building-section .box1 img{
+      margin-left: 45px;
+    }
+
+    #main-building-section .box2 p{
+      color: #d4d4dc;
+      font-size: 1.154em;
+      text-align: center;
+      padding-bottom: 14px;
+      line-height: 2em;
+      letter-spacing: 0.5px;
+      margin-top: 90px;
+      padding: 20px;
+    }
+
+    #main-building-section .box1 p{
+      margin-top: 40px;
+    }
+
+    #stylistic-analysis-section .box1 img{
+      margin-left: 45px;
+    }
+
+    #stylistic-analysis-section .box2 p{
+      margin: 20px;
+      margin-top: 90px;
+    }
+
+    #stylistic-analysis-section .box1 p{
+      margin: 20px;
+    }
+
+    #main-building-section{
+      background: url(../images/main-building-section-desc-mobile-version.jpg);
+      background-size: cover;
+      background-position: center;
+      height: auto;
+
+    }
+    /* DESCRIPTION PAGE FINISHES HERE*/
+
+
+
+
+
+
+    /* HISTORY PAGE HERE*/
+    #header-history .header-image{
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      background-size: cover;
+      background: url(../images/history-header-image.jpg);
+      border-bottom: 2px solid #feda6a;
+    }
+
+    #header-history p{
+      padding: 30px;
+    }
+
+    #history-image-section .box1 img{
+      margin-left: 45px;
+    }
+    /* HISTORY PAGE FINISHES HERE*/
+
+
+
+
+    /* STATEMENT OF SIGNIFICANCE PAGE HERE*/
+    #header-statement-Of-Sig .header-image{
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      background-size: cover;
+      background: url(../images/statement-Of-Sig.jpg);
+      border-bottom: 2px solid #feda6a;
+    }
+
+    #header-statement-Of-Sig p{
+      padding: 30px;
+    }
+
+    #statementOfSig-image-section .box1 img{
+      margin-left: 45px;
+    }
+    /* STATEMENT OF SIGNIFICANCE PAGE FINISHES HERE*/
+
+
+
+
+    /* ROBIN BOYD PAGE HERE*/
+    #header-boyd .header-image{
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      background-size: cover;
+      background: url(../images/boyd-header-img.jpg);
+      border-bottom: 2px solid #feda6a;
+    }
+
+    #header-boyd p{
+      padding: 30px;
+    }
+
+    #boyd-image-section .box1 img{
+      margin-left: 45px;
+    }
+
+    #boyd-section-box-2 .box1 img{
+      margin-left: 45px;
+    }
+
+}
+
+
+/* ----------- Nexus 7 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 600px)
+  and (device-height: 960px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+
+    /* INDEX PAGE HERE */
+    #boyd-info-section .box1 img{
+      margin-left: 115px;
+    }
+    /* INDEX PAGE FINISHES HERE */
+
+
+
+    /* STATEMENT OF SIGIFICANCE PAGE HERE */
+    #header-statement-Of-Sig .hero-image-content h1{
+      padding: 15px;
+    }
+
+}

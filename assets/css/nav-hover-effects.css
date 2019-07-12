@@ -49,7 +49,7 @@ from left to right */
 allows the hover effect to occur. Without the transform property, the hover effect would not appear */
 #header nav ul li a:hover::before{
   transform: scaleX(1);
-
+  
 }
 
 /* Comments same as above */
