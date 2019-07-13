@@ -49,7 +49,7 @@ from left to right */
 allows the hover effect to occur. Without the transform property, the hover effect would not appear */
 #header nav ul li a:hover::before{
   transform: scaleX(1);
-  
+
 }
 
 /* Comments same as above */
@@ -125,13 +125,6 @@ allows the hover effect to occur. Without the transform property, the hover effe
 
 
 /******************** NAVIGATION HOVER EFFECT FOR STATEMENT OF SIGNIFICANCE PAGE ******************/
-#header-statement-Of-Sig nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px;
-}
 
 /* This code is for the "before" hover effects */
 #header-statement-Of-Sig nav ul li a::before{
@@ -193,13 +186,13 @@ allows the hover effect to occur. Without the transform property, the hover effe
 
 
 /******************** NAVIGATION HOVER EFFECT FOR HISTORY PAGE ******************/
-#header-history nav{
+/* #header-history nav{
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
-}
+} */
 
 /* This code is for the "before" hover effects */
 #header-history nav ul li a::before{
@@ -262,13 +255,6 @@ allows the hover effect to occur. Without the transform property, the hover effe
 
 
 /******************** NAVIGATION HOVER EFFECT FOR ROBIN BOYD PAGE ******************/
-#header-boyd nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px;
-}
 
 /* This code is for the "before" hover effects */
 #header-boyd nav ul li a::before{

@@ -111,31 +111,10 @@ a.common-btn-styling:hover{
 
 #header nav{
   font-size: 15px;
-  padding: 20px;
   list-style-type: none;
   text-align: right;
   margin-top: 10px;
 }
-
-
-
-/* This code is for the label and toggle,
-which enables the hamburger nav menu */
-/* #header nav label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  color: white;
-  display: none;
-  width: 26px;
-  float: right;
-
-}
-
-#toggle{
-  display: none;
-} */
-
 
 
 
@@ -145,8 +124,20 @@ which enables the hamburger nav menu */
 
 #header nav ul li{
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-bottom: 1px solid #8e8b8b;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+#header nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
+  display: none;
+
 }
 
 #header nav ul li a{
@@ -564,13 +555,13 @@ which enables the hamburger nav menu */
 /* ********************* */
 
 
-#header nav{
+/* #header nav{
   font-size: 15px;
   padding: 20px;
   list-style-type: none;
   text-align: right;
   margin-top: 10px;
-}
+} */
 
 /* This code is for the label and toggle,
 which enables the hamburger nav menu */
@@ -579,7 +570,7 @@ which enables the hamburger nav menu */
 
 
 
-/* *************************8 */
+/* ************************* */
 #header-desc nav{
   font-size: 15px;
   padding: 20px;
@@ -588,10 +579,12 @@ which enables the hamburger nav menu */
   margin-top: 10px;
 }
 
-#header-desc nav ul{
+/* #header-desc nav ul{
   margin-top: 63px;
-}
+} */
 
+
+/* HAMBURGER MENU  */
 #header-desc nav label{
   margin: 0 40px 0 0;
   font-size: 26px;
@@ -599,8 +592,16 @@ which enables the hamburger nav menu */
   color: white;
   width: 26px;
   float: right;
+  display: none;
 
 }
+
+
+
+#header-desc nav ul{
+  margin-top: 63px;
+}
+
 
 #toggle{
   display: none;
@@ -853,7 +854,7 @@ margin-top: 90px;
 /************************* CSS CODE FOR STATEMENT OF SIGNIFICANCE HOMEPAGE STARTS HERE *************************/
 
 /********HEADER SECTION OF STATEMENT OF SIGNIFICANCE  ********/
-#header-statement-Of-Sig .header-image{
+#header-statement-Of-Sig{
   width: 100%;
   height: auto;
   min-height: 100%;
@@ -888,21 +889,21 @@ margin-top: 90px;
 }
 
 #header-statement-Of-Sig nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 10px;
 }
 
 #header-statement-Of-Sig nav ul{
-  display: flex;
-  transition: 0.6s;
-
+  margin-top: 63px;
 }
 
 #header-statement-Of-Sig nav ul li{
-  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #header-statement-Of-Sig nav ul li a{
@@ -912,6 +913,18 @@ margin-top: 90px;
   position: relative;
   padding: 1rem 0;
   margin: 0 3rem;
+  clear: right;
+
+}
+
+#header-statement-Of-Sig nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
+  display: none;
 
 }
 
@@ -1043,7 +1056,7 @@ margin-top: 90px;
 /************************* CSS CODE FOR HISTORY HOMEPAGE STARTS HERE *************************/
 
 /****************** HEADER SECTION **************/
-#header-history .header-image{
+#header-history{
   width: 100%;
   height: auto;
   min-height: 100%;
@@ -1076,12 +1089,7 @@ margin-top: 90px;
   line-height: 2em;
   padding: 30px;
 }
-/* ***************** */
 
-
-
-
-/* ********** */
 
 #header-history nav{
   font-size: 15px;
@@ -1093,22 +1101,6 @@ margin-top: 90px;
 
 #header-history nav ul{
   margin-top: 63px;
-
-}
-
-/* HAMBURGER MENU  */
-#header-desc nav label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  color: white;
-  width: 26px;
-  float: right;
-
-}
-
-#toggle{
-  display: none;
 }
 
 #header-history nav ul li{
@@ -1116,6 +1108,18 @@ margin-top: 90px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
+#header-history nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
+  display: none;
+
+}
+
 
 #header-history nav ul li a{
   text-decoration: none;
@@ -1246,7 +1250,7 @@ margin-top: 90px;
 
 /************************* CSS CODE FOR ROBIN BOYD HOMEPAGE STARTS HERE *************************/
 /****************** HEADER SECTION **************/
-#header-boyd .header-image{
+#header-boyd{
   width: 100%;
   height: auto;
   min-height: 100%;
@@ -1281,21 +1285,32 @@ margin-top: 90px;
 }
 
 #header-boyd nav{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 10px;
 }
 
 #header-boyd nav ul{
-  display: flex;
-  transition: 0.6s;
-
+  margin-top: 63px;
 }
 
 #header-boyd nav ul li{
-  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#header-boyd nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
+  display: none;
+
 }
 
 #header-boyd nav ul li a{
@@ -1305,6 +1320,7 @@ margin-top: 90px;
   position: relative;
   padding: 1rem 0;
   margin: 0 3rem;
+  clear: right;
 
 }
 
@@ -1537,6 +1553,34 @@ margin-top: 90px;
 and (min-device-width : 414px)
 and (max-device-width : 736px) { /* STYLES GO HERE */
   /* For IPhone 6,7,8 Plus: */
+
+  /* INDEX PAGE HERE */
+
+  #header{
+    height: auto;
+    min-height: 100%;
+    background: url(../images/churchill-hero-img-iphone-version.png);
+    background-attachment: fixed;
+  }
+
+  .index-logo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 30px;
+    text-align: left;
+  }
+
+  #newsletter-section{
+    padding-top: 22px;
+    text-align: center;
+  }
+
+  #newsletter-section .form{
+    padding-top: 17px;
+  }
+
+
   #content-cards li {
     width: 80%;
   }
@@ -1570,39 +1614,36 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     bottom: 110px;
   }
 
-  #header{
-    height: auto;
-    min-height: 100%;
-    background: url(../images/churchill-hero-img-iphone-version.png);
-    background-attachment: fixed;
-  }
 
+  /* DESCRIPTION PAGE HERE */
   #header-desc{
     height: auto;
     min-height: 100%;
     background: url(../images/description-header-image-mobile-version.jpg);
     background-position: center;
+    background-size: cover;
   }
 
-  #header-history .header-image{
+  #header-history{
     height: auto;
     min-height: 100%;
-    background: url(../images/history-header-image-mobile-version.jpg);
+    /* background: url(../images/history-header-image-mobile-version.jpg); */
     background-position: center;
   }
 
   #header-statement-Of-Sig .header-image{
     height: auto;
     min-height: 100%;
-    background: url(../images/statement-Of-Sig-mobile-version.jpg);
+    /* background: url(../images/statement-Of-Sig-mobile-version.jpg); */
     background-position: center;
   }
 
-  #header-boyd .header-image{
+  #header-boyd{
     height: auto;
     min-height: 100%;
     background: url(../images/boyd-header-img-mobile-version.jpg);
     background-position: center;
+    background-size: cover;
   }
 
 
@@ -1633,7 +1674,29 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+  }
 
+  /* desc footer */
+  #footer-section .production-declaration p{
+    display: block;
+    line-height: 1.5em;
+    text-align: center;
+    color: #d4d4dc;
+    padding: 20px;
+  }
+
+  #footer-section .copyright{
+    margin: 0 auto;
+    width: 40%;
+    font-family: 'Merriweather', serif;
+  }
+
+  #footer-section .copyright p{
+    display: block;
+    line-height: 1.5em;
+    text-align: center;
+    color: #d4d4dc;
+    margin: 25px;
   }
 
   #stylistic-analysis-section{
@@ -1675,54 +1738,25 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   }
 
 /* hamburger navigation menu starts here */
-   /* #header nav, #header nav ul li, #header-desc nav, #header-desc nav ul li{
+   #header nav, #header nav ul li, #header-desc nav, #header-desc nav ul li, #header-statement-Of-Sig nav, #header-statement-Of-Sig nav ul li, #header-history nav, #header-history nav ul li, #header-boyd nav, #header-boyd nav ul li{
       float: none;
       text-align: center;
       width: 100%;
   }
 
-   #header nav ul, #header-desc nav ul{
-     position: relative;
-     bottom: 154px;
 
-
-   }
-
-   #header nav label, #header-desc nav label{
+   #header nav label, #header-desc nav label, #header-statement-Of-Sig nav label, #header-history nav label, #header-boyd nav label{
      display: block;
      text-align: center;
      cursor: pointer;
      margin-left: 35px;
    }
 
-   #header nav ul li a, #header-desc nav ul li a{
+   #header nav ul li a, #header-desc nav ul li a, #header-statement-Of-Sig nav ul li a, #header-history nav ul li a, #header-boyd nav ul li a{
      display: block;
      margin: 0;
    }
 
-   #toggle:checked + nav ul{
-     display: block;
-   } */
-   /* hamburger navigation menu ends here */
-
-
-
-  .index-logo{
-    width: 150px;
-    height: 150px;
-    position: relative;
-    bottom: 30px;
-    text-align: left;
-  }
-
-  #newsletter-section{
-    padding-top: 22px;
-    text-align: center;
-  }
-
-  #newsletter-section .form{
-    padding-top: 17px;
-  }
 
   #footer-section ul{
     width: 48%;
@@ -1730,9 +1764,12 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     margin-top: 8px;
   }
 
+
+
   #footer-section h1{
     width: 30%;
     text-align: center;
+    margin: 0 auto;
   }
 
   #main-building-section .box2{
@@ -1816,8 +1853,19 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
       width: 100%;
     }
 
+    #toggle + .bmenu {
+      display: none;
+    }
+    #toggle:checked + .bmenu {
+      display: block;
+    }
 
+    label{
+            display: block;
+            cursor: pointer;
+        }
 }
+
 
 
 /* MEDIA QUERY FOR IPHONE 6, 6s, 7, 8 */
@@ -2127,7 +2175,7 @@ and (max-device-width : 1024px) { /* STYLES GO HERE */
 
 
     /* ROBIN BOYD PAGE HERE*/
-    #header-boyd .header-image{
+    #header-boyd{
       width: 100%;
       height: auto;
       min-height: 100%;
