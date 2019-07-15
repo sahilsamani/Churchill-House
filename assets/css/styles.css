@@ -8,6 +8,65 @@
   overflow: hidden;
 }
 
+/* Universal toggle style used on every page */
+#toggle{
+  display: none;
+}
+
+/* Universal used hero image on every page */
+#navigation{
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Universal used navigation style on every page */
+#navigation nav{
+  font-size: 15px;
+  list-style-type: none;
+  padding: 20px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+#navigation nav ul{
+  margin-top: 63px;
+}
+
+#navigation nav ul li{
+  display: inline-block;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+#navigation nav ul li a{
+  text-decoration: none;
+  color: #e7f0f9;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 1rem 0;
+  margin: 0 3rem;
+  clear: right;
+
+}
+
+#navigation nav label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  width: 26px;
+  float: right;
+  display: none;
+
+}
+
 /***** This h1 code is for both the newsletter section h1 and introduction section h1 elements *****/
 h1{
   font-size: 2.308em;
@@ -53,16 +112,9 @@ I have applied various styles to the navigation, including before and after hove
 
 /*This code is for the hero image, which is displayed on the homepage*/
 #header{
-  width: 100%;
-  height: auto;
-  min-height: 100%;
   background-image: url('../images/churchill-hero-img.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
 }
+
 
 /* This styling code is for the text that is displayed on the header section */
 #header .hero-image-content{
@@ -109,49 +161,23 @@ a.common-btn-styling:hover{
   background-color: #d4d4dc;
 }
 
-#header nav{
-  font-size: 15px;
-  list-style-type: none;
-  text-align: right;
-  margin-top: 10px;
-}
 
 
-
-#header nav ul{
+/* #h nav ul{
   margin-top: 63px;
 }
 
-#header nav ul li{
+#navigation nav ul li{
   display: inline-block;
   border-bottom: 1px solid #8e8b8b;
   /* padding-left: 10px;
   padding-right: 10px; */
-}
 
-#header nav label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  color: white;
-  width: 26px;
-  float: right;
-  display: none;
 
-}
 
-#header nav ul li a{
-  text-decoration: none;
-  color: #e7f0f9;
-  letter-spacing: 0.5px;
-  position: relative;
-  padding: 1rem 0;
-  margin: 0 3rem;
-  clear: right;
-}
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
-#header nav .nav-text-highlight{
+#navigation nav .nav-text-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
@@ -509,14 +535,9 @@ a.common-btn-styling:hover{
 
 /***************** HEADER SECTION STARTS HERE ************************/
 #header-desc{
-  width: 100%;
-  height: auto;
-  min-height: 100%;
+
   background-image: url('../images/description-header-image.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
 
 }
 
@@ -552,62 +573,13 @@ a.common-btn-styling:hover{
   padding: 30px;
 }
 
-/* ********************* */
-
-
-/* #header nav{
-  font-size: 15px;
-  padding: 20px;
-  list-style-type: none;
-  text-align: right;
-  margin-top: 10px;
-} */
-
-/* This code is for the label and toggle,
-which enables the hamburger nav menu */
 
 
 
 
 
-/* ************************* */
-#header-desc nav{
-  font-size: 15px;
-  padding: 20px;
-  list-style-type: none;
-  text-align: right;
-  margin-top: 10px;
-}
 
-/* #header-desc nav ul{
-  margin-top: 63px;
-} */
-
-
-/* HAMBURGER MENU  */
-#header-desc nav label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  color: white;
-  width: 26px;
-  float: right;
-  display: none;
-
-}
-
-
-
-#header-desc nav ul{
-  margin-top: 63px;
-}
-
-
-#toggle{
-  display: none;
-}
-
-#header-desc nav ul li{
+/* #header-desc nav ul li{
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -622,7 +594,7 @@ which enables the hamburger nav menu */
   margin: 0 3rem;
   clear: right;
 
-}
+} */
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
 #header-desc nav .nav-text-highlight{
@@ -855,14 +827,8 @@ margin-top: 90px;
 
 /********HEADER SECTION OF STATEMENT OF SIGNIFICANCE  ********/
 #header-statement-Of-Sig{
-  width: 100%;
-  height: auto;
-  min-height: 100%;
+
   background-image: url('../images/statement-Of-Sig.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
 }
 
@@ -888,55 +854,15 @@ margin-top: 90px;
   padding: 30px;
 }
 
-#header-statement-Of-Sig nav{
-  font-size: 15px;
-  padding: 20px;
-  list-style-type: none;
-  text-align: right;
-  margin-top: 10px;
-}
-
-#header-statement-Of-Sig nav ul{
-  margin-top: 63px;
-}
-
-#header-statement-Of-Sig nav ul li{
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#header-statement-Of-Sig nav ul li a{
-  text-decoration: none;
-  color: #e7f0f9;
-  letter-spacing: 0.5px;
-  position: relative;
-  padding: 1rem 0;
-  margin: 0 3rem;
-  clear: right;
-
-}
-
-#header-statement-Of-Sig nav label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  color: white;
-  width: 26px;
-  float: right;
-  display: none;
-
-}
-
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
-#header-statement-Of-Sig nav .nav-text-highlight{
+#navigation nav .nav-text-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
 
 /* This code is for the text highlight that has been set on the header-image heading (h1) */
-#header-statement-Of-Sig h1 .hero-content-highlight{
+#navigation h1 .hero-content-highlight{
   color: #feda6a;
   font-weight: lighter;
 }
@@ -1057,14 +983,7 @@ margin-top: 90px;
 
 /****************** HEADER SECTION **************/
 #header-history{
-  width: 100%;
-  height: auto;
-  min-height: 100%;
   background-image: url('../images/history-header-image.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
 }
 
@@ -1091,46 +1010,6 @@ margin-top: 90px;
 }
 
 
-#header-history nav{
-  font-size: 15px;
-  padding: 20px;
-  list-style-type: none;
-  text-align: right;
-  margin-top: 10px;
-}
-
-#header-history nav ul{
-  margin-top: 63px;
-}
-
-#header-history nav ul li{
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#header-history nav label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  color: white;
-  width: 26px;
-  float: right;
-  display: none;
-
-}
-
-
-#header-history nav ul li a{
-  text-decoration: none;
-  color: #e7f0f9;
-  letter-spacing: 0.5px;
-  position: relative;
-  padding: 1rem 0;
-  margin: 0 3rem;
-  clear: right;
-
-}
 
 
 /* This code is for the text highlight that has been set on the "description" nav link.*/
@@ -1251,14 +1130,7 @@ margin-top: 90px;
 /************************* CSS CODE FOR ROBIN BOYD HOMEPAGE STARTS HERE *************************/
 /****************** HEADER SECTION **************/
 #header-boyd{
-  width: 100%;
-  height: auto;
-  min-height: 100%;
   background-image: url('../images/boyd-header-img.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
 }
 
@@ -1554,6 +1426,20 @@ and (min-device-width : 414px)
 and (max-device-width : 736px) { /* STYLES GO HERE */
   /* For IPhone 6,7,8 Plus: */
 
+  /* Universal navigation style used in mobile responsiveness */
+  #navigation nav ul li{
+    display: inline-block;
+    border-bottom: 1px solid #8e8b8b;
+  }
+
+  #navigation nav{
+
+    padding: 0px;
+    margin-top: 30px;
+
+  }
+
+
   /* INDEX PAGE HERE */
 
   #header{
@@ -1615,13 +1501,10 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   }
 
 
+
   /* DESCRIPTION PAGE HERE */
   #header-desc{
-    height: auto;
-    min-height: 100%;
     background: url(../images/description-header-image-mobile-version.jpg);
-    background-position: center;
-    background-size: cover;
   }
 
   #header-history{
@@ -1738,21 +1621,21 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   }
 
 /* hamburger navigation menu starts here */
-   #header nav, #header nav ul li, #header-desc nav, #header-desc nav ul li, #header-statement-Of-Sig nav, #header-statement-Of-Sig nav ul li, #header-history nav, #header-history nav ul li, #header-boyd nav, #header-boyd nav ul li{
+    #navigation nav, #navigation nav ul li {
       float: none;
       text-align: center;
       width: 100%;
   }
 
 
-   #header nav label, #header-desc nav label, #header-statement-Of-Sig nav label, #header-history nav label, #header-boyd nav label{
+   #navigation nav label{
      display: block;
      text-align: center;
      cursor: pointer;
      margin-left: 35px;
    }
 
-   #header nav ul li a, #header-desc nav ul li a, #header-statement-Of-Sig nav ul li a, #header-history nav ul li a, #header-boyd nav ul li a{
+   #navigation nav ul li a{
      display: block;
      margin: 0;
    }
