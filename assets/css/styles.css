@@ -83,7 +83,6 @@ h1{
   cursor: pointer;
   color: #ffff;
   border-radius: 5px;
-  /* transition: 0.2s; */
   background-color: #393f4d;
   display: inline-block;
   text-decoration: none;
@@ -165,6 +164,10 @@ a.common-btn-styling{
 a.common-btn-styling:hover{
   background-color: #d4d4dc;
   text-decoration: underline;
+  color: #494949 !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s;
 }
 
 
@@ -242,6 +245,10 @@ a.common-btn-styling:hover{
 
 #newsletter-section .newsletter-btn:hover{
   color: #393f4d;
+  color: #494949 !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s;
 }
 /**************** NEWSLETTER SECTION ENDS HERE *******************/
 
@@ -402,7 +409,7 @@ a.common-btn-styling:hover{
   background: url('../images/robin-boyd-section-img_old.jpg');
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   width: auto;
 }
@@ -479,7 +486,7 @@ a.common-btn-styling:hover{
 /* This is the left section of the footer */
 #footer-section .footer-section-right{
   width: 200px;
-  height: 200px;
+  height: 100px;
   display: inline-block;
   width: 33%;
   text-align: center;
@@ -1449,6 +1456,10 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
 
   }
 
+  #navigation nav ul li a{
+    display: block;
+    margin: 0;
+  }
 
   /* These blocks of code will disable the hover effects on mobile responsiveness */
   #navigation nav ul li a::before{
@@ -1476,13 +1487,14 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
 
 
 
-  /* INDEX PAGE HERE */
+  /****** INDEX PAGE STARTS HERE ********/
 
   #header{
+    background: url(../images/churchill-hero-img-iphone-version.png);
+    background-size: cover;
     height: auto;
     min-height: 100%;
-    background: url(../images/churchill-hero-img-iphone-version.png);
-    background-attachment: fixed;
+    background-position: center;
   }
 
   .index-logo{
@@ -1535,34 +1547,74 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     position: relative;
     bottom: 110px;
   }
+  /****** INDEX PAGE ENDS HERE ********/
 
 
 
-  /* DESCRIPTION PAGE HERE */
+
+  /******** FOOTER SECTION STARTS HERE ********/
+
+  #footer-section .footer-section-left,
+  #footer-section .footer-section-center,
+	#footer-section .footer-section-right{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+  #footer-section h1 .footer-text-highlight{
+    line-height: 1.5em;
+  }
+
+	#footer-section .footer-section-center li{
+		/* margin-left: 0; */
+	}
+
+  #footer-section .footer-section-center .website-footer-links{
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+  }
+  /******** FOOTER SECTION ENDS HERE ********/
+
+
+
+
+  /******** DESCRIPTION PAGE STARTS HERE *********/
   #header-desc{
     background: url(../images/description-header-image-mobile-version.jpg);
+    background-size: cover;
+    height: auto;
+    min-height: 100%;
+    background-position: center;
+
   }
 
   #header-history{
+    background: url(../images/history-header-image-mobile-version.jpg);
+    background-size: cover;
     height: auto;
     min-height: 100%;
-    /* background: url(../images/history-header-image-mobile-version.jpg); */
     background-position: center;
+
   }
 
-  #header-statement-Of-Sig .header-image{
+  #header-statement-Of-Sig{
+    background: url(../images/statement-Of-Sig-mobile-version.jpg);
+    background-size: cover;
     height: auto;
     min-height: 100%;
-    /* background: url(../images/statement-Of-Sig-mobile-version.jpg); */
     background-position: center;
+
   }
 
   #header-boyd{
+    background: url(../images/boyd-header-img-mobile-version.jpg);
+    background-size: cover;
     height: auto;
     min-height: 100%;
-    background: url(../images/boyd-header-img-mobile-version.jpg);
     background-position: center;
-    background-size: cover;
+
   }
 
 
@@ -1588,11 +1640,8 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   #main-building-section{
     height: auto;
     min-height: 100%;
-    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    background: url(../images/content-cards-background-img-mobile-version.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
   }
 
   /* desc footer */
@@ -1624,19 +1673,20 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
     background: url(../images/content-cards-background-img-mobile-version.jpg);
     background-position: center;
 
+
   }
 
   #history-image-section{
     height: auto;
     min-height: 100%;
-    background: url(../images/main-building-section-desc-mobile-version.jpg);
+    /* background: url(../images/main-building-section-desc-mobile-version.jpg); */
     background-position: center;
   }
 
   #statementOfSig-image-section{
     height: auto;
     min-height: 100%;
-    background: url(../images/content-cards-background-img-mobile-version.jpg);
+    /* background: url(../images/content-cards-background-img-mobile-version.jpg); */
     background-position: center;
 
   }
@@ -1644,16 +1694,16 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
   #boyd-image-section{
     height: auto;
     min-height: 100%;
-    background: url(../images/content-cards-background-img-mobile-version.jpg);
-    background-position: right;
+    /* background: url(../images/content-cards-background-img-mobile-version.jpg); */
+    background-position: center;
 
   }
 
   #boyd-section-box-2{
     height: auto;
     min-height: 100%;
-    background: url(../images/main-building-section-desc-mobile-version.jpg);
-    background-position: right;
+    /* background: url(../images/main-building-section-desc-mobile-version.jpg); */
+    background-position: center;
   }
 
 /* hamburger navigation menu starts here */
@@ -1671,10 +1721,14 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
      margin-left: 35px;
    }
 
-   #navigation nav ul li a{
+   #navigation nav label:nth-child(even){
+     color: yellow;
+   }
+
+   /* #navigation nav ul li a{
      display: block;
      margin: 0;
-   }
+   } */
 
 
   #footer-section ul{
@@ -1686,9 +1740,16 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
 
 
   #footer-section h1{
-    width: 30%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
+  }
+
+  #footer-section  .footer-section-right .footer-copyright-section .copyright{
+    position: relative;
+    top: 60px;
+    line-height: 1.5em;
+    width: 100%;
   }
 
   #main-building-section .box2{
@@ -1793,9 +1854,99 @@ and (max-device-width : 736px) { /* STYLES GO HERE */
 and (min-device-width : 375px)
 and (max-device-width : 667px){
 
+
+
+      /* Universal navigation style used in mobile responsiveness */
+      #navigation nav ul li{
+        display: inline-block;
+        border-bottom: 1px solid #8e8b8b;
+      }
+
+      #navigation nav{
+
+        padding: 0px;
+        margin-top: 30px;
+
+      }
+
+      #navigation nav ul li a{
+        display: block;
+        margin: 0;
+      }
+
+      /* These blocks of code will disable the hover effects on mobile responsiveness */
+      #navigation nav ul li a::before{
+      display:none;
+      }
+      #navigation nav ul li a::after{
+      display:none;
+      }
+      #navigation nav ul li a::before{
+      display:none;
+
+      }
+      #navigation nav ul li a::after{
+        display:none;
+      }
+      #navigation nav ul li a:hover::before{
+        display:none;
+      }
+
+      /* Comments same as above */
+      #navigation nav ul li a:hover::after{
+        display:none;
+
+      }
+
+
+
+    /* hamburger navigation menu starts here */
+        #navigation nav, #navigation nav ul li {
+          float: none;
+          text-align: center;
+          width: 100%;
+      }
+
+
+       #navigation nav label{
+         display: block;
+         text-align: center;
+         cursor: pointer;
+         margin-left: 35px;
+       }
+
+       #navigation nav label:nth-child(even){
+         color: yellow;
+       }
+
+       #toggle + .bmenu {
+         display: none;
+       }
+       #toggle:checked + .bmenu {
+         display: block;
+       }
+
+       label{
+               display: block;
+               cursor: pointer;
+           }
+    /* HAMBURGER MENU ENDS HERE */
+
+
+
+
+
   /* INDEX PAGE HERE */
   #header .hero-image-content h1{
     padding: 10px;
+  }
+
+  .index-logo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 30px;
+    text-align: left;
   }
 
   #header p{
@@ -1805,6 +1956,12 @@ and (max-device-width : 667px){
   #newsletter-section h1{
     padding: 12px;
   }
+
+  #newsletter-section .newsletter-btn{
+    padding: 0px;
+  }
+
+
 
   #content-cards li{
     width: 80%;
@@ -1843,6 +2000,32 @@ and (max-device-width : 667px){
   /* INDEX PAGE FINISHES HERE */
 
 
+
+  /* FOOTER PAGE STARTS HERE */
+  #footer-section .footer-section-left, #footer-section .footer-section-center, #footer-section .footer-section-right{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer-section .footer-section-center .website-footer-links{
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+  }
+
+  #footer-section .footer-section-right .footer-copyright-section .copyright{
+    position: relative;
+    top: 60px;
+    line-height: 1.5em;
+    width: 100%;
+  }
+  /* FOOTER PAGE FINISHES HERE  */
+
+
+
+
+
   /* DESCRIPTION PAGE HERE */
   #main-building-section .box2{
     width: 100%;
@@ -1851,6 +2034,16 @@ and (max-device-width : 667px){
   }
 
   #main-building-section .box1{
+    width: 100%;
+  }
+
+  #stylistic-analysis-section .box2{
+    width: 100%;
+    position: relative;
+    bottom: 40px;
+  }
+
+  #stylistic-analysis-section .box1{
     width: 100%;
   }
   /* DESCRIPTION PAGE FINISHES HERE */
@@ -1911,6 +2104,8 @@ and (max-device-width : 667px){
 
   #boyd-section-box-2 .box2{
     width: 100%;
+    position: relative;
+    bottom: 40px;
   }
 
 
@@ -1932,6 +2127,86 @@ and (max-device-width : 667px){
 and (min-device-width : 768px)
 and (max-device-width : 1024px) { /* STYLES GO HERE */
   /* For IPad Mini and IPad Air ************/
+
+
+
+    /* Universal navigation style used in mobile responsiveness */
+    #navigation nav ul li{
+      display: inline-block;
+      border-bottom: 1px solid #8e8b8b;
+    }
+
+    #navigation nav{
+
+      padding: 0px;
+      margin-top: 30px;
+
+    }
+
+    #navigation nav ul li a{
+      display: block;
+      margin: 0;
+    }
+
+    /* These blocks of code will disable the hover effects on mobile responsiveness */
+    #navigation nav ul li a::before{
+    display:none;
+    }
+    #navigation nav ul li a::after{
+    display:none;
+    }
+    #navigation nav ul li a::before{
+    display:none;
+
+    }
+    #navigation nav ul li a::after{
+      display:none;
+    }
+    #navigation nav ul li a:hover::before{
+      display:none;
+    }
+
+    /* Comments same as above */
+    #navigation nav ul li a:hover::after{
+      display:none;
+
+    }
+
+
+
+
+  /* hamburger navigation menu starts here */
+      #navigation nav, #navigation nav ul li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+
+     #navigation nav label{
+       display: block;
+       text-align: center;
+       cursor: pointer;
+       margin-left: 35px;
+     }
+
+     #navigation nav label:nth-child(even){
+       color: yellow;
+     }
+
+     #toggle + .bmenu {
+       display: none;
+     }
+     #toggle:checked + .bmenu {
+       display: block;
+     }
+
+     label{
+             display: block;
+             cursor: pointer;
+         }
+  /* HAMBURGER MENU ENDS HERE */
+
 
 /* INDEX PAGE */
     #header{
@@ -1984,7 +2259,17 @@ and (max-device-width : 1024px) { /* STYLES GO HERE */
 /* INDEX PAGE FINISHES HERE*/
 
 
+/* FOOTER PAGE STARTS HERE */
 
+#footer-section .footer-section-center .website-footer-links{
+  margin: 0 auto;
+}
+
+#footer-section .footer-section-right{
+  line-height: 1.5em;
+  position: relative;
+  bottom: 50px;
+}
 
 
 
