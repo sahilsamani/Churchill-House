@@ -22,6 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-bottom: 2px solid #feda6a;
 }
 
 
@@ -2109,12 +2110,335 @@ and (max-device-width : 667px){
   }
 
 
+}
+
+/* MEDIA QUERY FOR ANDROID PHONES */
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+
+  /* Universal navigation style used in mobile responsiveness */
+  #navigation nav ul li{
+    display: inline-block;
+    border-bottom: 1px solid #8e8b8b;
+  }
+
+  #navigation nav{
+
+    padding: 0px;
+    margin-top: 30px;
+
+  }
+
+  #navigation nav ul li a{
+    display: block;
+    margin: 0;
+  }
+
+  /* These blocks of code will disable the hover effects on mobile responsiveness */
+  #navigation nav ul li a::before{
+  display:none;
+  }
+  #navigation nav ul li a::after{
+  display:none;
+  }
+  #navigation nav ul li a::before{
+  display:none;
+
+  }
+  #navigation nav ul li a::after{
+    display:none;
+  }
+  #navigation nav ul li a:hover::before{
+    display:none;
+  }
+
+  /* Comments same as above */
+  #navigation nav ul li a:hover::after{
+    display:none;
+
+  }
 
 
 
+/* hamburger navigation menu starts here */
+    #navigation nav, #navigation nav ul li {
+      float: none;
+      text-align: center;
+      width: 100%;
+  }
+
+
+   #navigation nav label{
+     display: block;
+     text-align: center;
+     cursor: pointer;
+     margin-left: 35px;
+   }
+
+   #navigation nav label:nth-child(even){
+     color: yellow;
+   }
+
+   #toggle + .bmenu {
+     display: none;
+   }
+   #toggle:checked + .bmenu {
+     display: block;
+   }
+
+   label{
+           display: block;
+           cursor: pointer;
+       }
+/* HAMBURGER MENU ENDS HERE */
+
+
+/* INDEX PAGE STARTS HERE */
+
+  #boyd-info-section{
+    background-position: center;
+  }
+  #newsletter-section h1{
+    padding: 12px;
+  }
+
+  #newsletter-section .form{
+    padding-top: 17px;
+  }
+
+  #newsletter-section input[type="email"]{
+    padding: 5px;
+    width: 225px;
+    border-radius: 5px;
+  }
+
+  #newsletter-section .newsletter-btn{
+    margin: 20px;
+  }
+
+  #content-cards li{
+    width: 80%;
+  }
+
+  #boyd-info-section .box2{
+    width: 100%;
+  }
+
+  #footer-section .footer-section-left,
+  #footer-section .footer-section-center,
+  #footer-section .footer-section-right{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer-section .footer-section-center .website-footer-links li{
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 1.3em;
+    padding: 15px;
+  }
+
+  #footer-section .footer-section-center .website-footer-links{
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+  }
+
+  #footer-section .footer-section-right .footer-copyright-section .copyright{
+    position: relative;
+    top: 60px;
+    line-height: 1.5em;
+    width: 100%;
+  }
+  /* INDEX PAGE ENDS HERE */
+
+
+
+
+  /* DESCRIPTION PAGE STARTS HERE */
+  #main-building-section .box1{
+    width: 100%;
+  }
+
+  .index-logo{
+    position: relative;
+    bottom: 30px;
+  }
+
+  #main-building-section .box2{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
+
+  #stylistic-analysis-section .box1{
+    width: 100%;
+  }
+
+  #stylistic-analysis-section .box2{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
+  /* DESCRIPTION PAGE ENDS HERE */
+
+
+  /* STATEMENT OF SIGIFICANCE PAGE STARTS HERE */
+  #statementOfSig-section h1{
+    padding: 10px;
+  }
+
+  #statementOfSig-image-section .box1{
+    width: 100%;
+  }
+
+  #statementOfSig-image-section .box2{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
+  /* STATEMENT OF SIGIFICANCE PAGE ENDS HERE */
+
+
+  /* HISTORY PAGE STARTS HERE */
+
+  #history-image-section .box1{
+    width: 100%;
+  }
+
+  #history-image-section .box2{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
+  /* HISTORY PAGE ENDS HERE */
+
+
+  /* ROBIN BOYD PAGE STARTS HERE */
+  #boyd-image-section .box1{
+    width: 100%;
+  }
+
+  #boyd-image-section .box2{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
+
+  #boyd-section-box-2 .box1{
+    width: 100%;
+  }
+
+  #boyd-section-box-2 .box2{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
+  /* ROBIN BOYD PAGE ENDS HERE */
 
 }
 
+
+  /* MEDIA QUERY FOR TABLET DEVICE */
+  @media only screen and (max-width: 760px){
+
+    /* Universal navigation style used in mobile responsiveness */
+    #navigation nav ul li{
+      display: inline-block;
+      border-bottom: 1px solid #8e8b8b;
+    }
+
+    #navigation nav{
+
+      padding: 0px;
+      margin-top: 30px;
+
+    }
+
+    #navigation nav ul li a{
+      display: block;
+      margin: 0;
+    }
+
+    /* These blocks of code will disable the hover effects on mobile responsiveness */
+    #navigation nav ul li a::before{
+    display:none;
+    }
+    #navigation nav ul li a::after{
+    display:none;
+    }
+    #navigation nav ul li a::before{
+    display:none;
+
+    }
+    #navigation nav ul li a::after{
+      display:none;
+    }
+    #navigation nav ul li a:hover::before{
+      display:none;
+    }
+
+    /* Comments same as above */
+    #navigation nav ul li a:hover::after{
+      display:none;
+
+    }
+
+
+
+  /* hamburger navigation menu starts here */
+      #navigation nav, #navigation nav ul li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+
+     #navigation nav label{
+       display: block;
+       text-align: center;
+       cursor: pointer;
+       margin-left: 35px;
+     }
+
+     #navigation nav label:nth-child(even){
+       color: yellow;
+     }
+
+     #toggle + .bmenu {
+       display: none;
+     }
+     #toggle:checked + .bmenu {
+       display: block;
+     }
+
+     label{
+             display: block;
+             cursor: pointer;
+         }
+  /* HAMBURGER MENU ENDS HERE */
+
+
+  /* INDEX PAGE STARTS HERE */
+
+    .index-logo{
+      position: relative;
+      bottom: 30px;
+    }
+
+    #newsletter-section .form{
+      margin-top: 15px;
+    }
+
+    #content-cards li{
+      width: 80%;
+    }
+
+    #footer-section .footer-section-right{
+      line-height: 1.5em;
+    }
+  }
 
 
 
@@ -2335,7 +2659,7 @@ and (max-device-width : 1024px) { /* STYLES GO HERE */
 
 
     /* HISTORY PAGE HERE*/
-    #header-history .header-image{
+    #header-history{
       width: 100%;
       height: auto;
       min-height: 100%;
@@ -2357,7 +2681,7 @@ and (max-device-width : 1024px) { /* STYLES GO HERE */
 
 
     /* STATEMENT OF SIGNIFICANCE PAGE HERE*/
-    #header-statement-Of-Sig .header-image{
+    #header-statement-Of-Sig{
       width: 100%;
       height: auto;
       min-height: 100%;
@@ -2369,6 +2693,7 @@ and (max-device-width : 1024px) { /* STYLES GO HERE */
     #header-statement-Of-Sig p{
       padding: 30px;
     }
+
 
     #statementOfSig-image-section .box1 img{
       margin-left: 45px;
